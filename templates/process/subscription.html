@@ -1,0 +1,283 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block stylesheets %}
+
+{% endblock %}
+{% block hero %}
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-10">
+                <div class="contents text-center">
+                    <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">Mate - Free Parallax
+                        Website Template</h1>
+                    <p class="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. </p>
+                    <a href="#" class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Download</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock hero %}
+
+
+
+{% block content %}
+
+
+    <!-- Start Pricing Table Section -->
+    <div id="subscription-process" class="section subscription-process-section">
+        <div class="container text-center">
+            <div class="section-header">
+                <h2 class="section-title">The subscription process </h2>
+                <hr class="lines">
+                <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat,
+                    dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p>
+            </div>
+
+            <div class="row justify-content-around subscription-process">
+                <div class="subscription-process-item col-md-6 col-lg-3">
+                    <div class="item-number">
+                        <span>.01</span>
+                    </div>
+                    <div class="item-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat,
+                            dignissimos!Lorem ipsum dolor.</p>
+
+                    </div>
+                </div>
+                <div class="subscription-process-item col-md-6 col-lg-3">
+                    <div class="item-number">
+                        <span>.02</span>
+                    </div>
+                    <div class="item-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat,
+                            dignissimos!Lorem ipsum dolor.</p>
+
+                    </div>
+                </div>
+                <div class="subscription-process-item col-md-6 col-lg-3">
+                    <div class="item-number">
+                        <span>.03</span>
+                    </div>
+                    <div class="item-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat,
+                            dignissimos!Lorem ipsum dolor.</p>
+
+                    </div>
+                </div>
+                <div class="subscription-process-item col-md-6 col-lg-3">
+                    <div class="item-number">
+                        <span>.04</span>
+                    </div>
+                    <div class="item-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat,
+                            dignissimos!Lorem ipsum dolor.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Pricing Table Section -->
+
+
+
+    <!-- Start Test Bot Section -->
+    <div id="test-bot" class="section test-bot" data-stellar-background-ratio="-0.2">
+        <div class="container-fluid text-center">
+            <div class="test-bot-area">
+                <div class="title">
+                    <h3 class="wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms">Want to test our Bot ?</h3>
+                    <p class="wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms">You have any doubts about our system ? <br> Test the bot here !</p>
+                </div>
+                <form class="input-group pb-3 pt-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0.3s">
+                    <input type="url" class="form-control" placeholder="Enter your telegram account link ">
+                    <span class="input-group-btn" style="align-content: center">
+                    <button class="btn btn-test-bot" type="submit">Lunch</button>
+                    </span>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Test Bot Section -->
+
+    <!-- Start Pricing Table Section -->
+    <div id="subscription-process" class="section subscription" data-stellar-background-ratio="-0.2">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">The subscription form </h2>
+                <hr class="lines">
+                <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat,
+                    dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p>
+            </div>
+
+            <div class="subscription-form">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-sm-8 col-xs-12">
+                            <div class="inner--subscription-form">
+                                <form class="form" id="subscriptionForm">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-12">
+                                            {% csrf_token %}
+                                            <div class="form-group">
+                                                {% if subscription_form.errors %}
+                                                    {% for field in subscription_form %}
+                                                        {% for error in field.errors %}
+                                                            <div class="alert alert-danger">
+                                                                <strong>{{ error|escape }}</strong>
+                                                            </div>
+                                                        {% endfor %}
+                                                    {% endfor %}
+                                                    {% for error in subscription_form.non_field_errors %}
+                                                        <div class="alert alert-danger">
+                                                            <strong>{{ error|escape }}</strong>
+                                                        </div>
+                                                    {% endfor %}
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="form-control-label"
+                                                       for="{{ subscription_form.type.auto_id }}">
+                                                    Type :
+                                                </label>
+                                                {{ subscription_form.type }}
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="{{ subscription_form.payment_way.auto_id }}">
+                                                    Moyen de paiement :
+                                                </label>
+                                                {{ subscription_form.payment_way }}
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="{{ subscription_form.payment_reference.auto_id }}">
+                                                    Code Reférence :
+                                                </label>
+                                                {{ subscription_form.payment_reference }}
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="{{ subscription_form.telegram_link.auto_id }}">
+                                                    Lien Telegram :
+                                                </label>
+                                                {{ subscription_form.telegram_link }}
+                                            </div>
+                                        </div>
+                                             <input type="number" name="card" value="" style="visibility: hidden; display: none;">
+                                        <div class="form-footer">
+                                            <div class="form-group terms-check-input">
+                                                <input type="checkbox" id="terms-check">
+                                                <label for="terms-check">I have read the <a href="{% url 'terms' %}">Terms & Conditions.</a> </label>
+                                            </div>
+                                            <div class="submit-button text-right">
+                                                <button class="btn btn-common" id="submit" type="submit">Subscribe
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="cardFormModal" tabindex="-1" role="dialog"
+         aria-labelledby="cardFormModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="cardFormModalLabel">Card Form</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header p-0">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-light btn-block text-left p-3 rounded-0">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div class="icons"><img src="https://i.imgur.com/2ISgYja.png"
+                                                                        width="30"> <img
+                                                        src="https://i.imgur.com/W1vtnOV.png" width="30"> <img
+                                                        src="https://i.imgur.com/35tC99g.png" width="30"> <img
+                                                        src="https://i.imgur.com/2ISgYja.png" width="30"></div>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <form class="card-body" id="cardForm">
+                                    <div class="row mt-3 mb-2">
+                                        <div class="col-12">
+                                            <h6 class="font-weight-normal card-text">Card Number</h6>
+                                            <div class="input">
+                                                <i class="fa fa-credit-card"></i>
+                                                {{ card_form.card_number }}
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row mb-4">
+                                        <div class="col-md-6">
+                                            <h6 class="font-weight-normal card-text">Expiry Date</h6>
+                                            <div class="input">
+                                                <i class="fa fa-calendar"></i>
+                                                {{ card_form.expiration_date }}
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h6 class="font-weight-normal card-text">CVC/CVV</h6>
+                                            <div class="input">
+                                                <i class="fa fa-lock"></i>
+                                                {{ card_form.cvv }}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-12">
+                                            <h6 class="font-weight-normal card-text mt-2">Card Owner Name</h6>
+                                            <div class="input mb-3">
+                                                <i class="fa fa-user"></i>
+                                                {{ card_form.owner_name }}
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <span class="text-muted certificate-text"><i class="fa fa-lock"></i> Your transaction is secured with ssl certificate</span>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="sendCardFormButton" class="btn btn-primary">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
+
+
+
+{% block scripts %}{% endblock %}

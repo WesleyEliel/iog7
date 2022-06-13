@@ -1,0 +1,1971 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-14 17:39+0100\n"
+"PO-Revision-Date: 2022-05-14 15:05+0000\n"
+"Last-Translator:   <admin@idg.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
+
+#: .\core\models.py:14
+msgid "Ip address"
+msgstr ""
+
+#: .\core\models.py:15
+msgid "Subscriber Telegram Account Link"
+msgstr "Lien vers le compte Telegram de l'abonné"
+
+#: .\core\models.py:16
+msgid "Is banned"
+msgstr "Est interdit"
+
+#: .\core\models.py:17 .\core\models.py:43 .\core\models.py:64
+#: .\core\models.py:86 .\core\models.py:111 .\core\models.py:134
+msgid "Creation Date"
+msgstr "Date de création"
+
+#: .\core\models.py:18 .\core\models.py:46 .\core\models.py:65
+#: .\core\models.py:87 .\core\models.py:112 .\core\models.py:135
+msgid "Last Update Date"
+msgstr "Date de la dernière mise à jour"
+
+#: .\core\models.py:21
+msgid "Surfer of address {self.get_ip_address()}"
+msgstr "Surfeur d'adresse"
+
+#: .\core\models.py:31
+msgid "Surfer"
+msgstr "Surfeur"
+
+#: .\core\models.py:32
+msgid "Surfers"
+msgstr "Surfers"
+
+#: .\core\models.py:36
+msgid "Name"
+msgstr "Nom"
+
+#: .\core\models.py:37 .\core\models.py:109
+msgid "Price"
+msgstr "Prix"
+
+#: .\core\models.py:38 .\templates\base.html:68 .\templates\base.html:97
+msgid "Order"
+msgstr "Commande"
+
+#: .\core\models.py:39
+msgid "First Feature"
+msgstr "Premier élément"
+
+#: .\core\models.py:40
+msgid "Second Feature"
+msgstr "Deuxième élément"
+
+#: .\core\models.py:41
+msgid "Third Feature"
+msgstr "Troisième élément"
+
+#: .\core\models.py:42
+msgid "Fourth Feature"
+msgstr "Quatrième élément"
+
+#: .\core\models.py:44
+msgid "Design if the plan is available"
+msgstr "Designe si le plan est disponible"
+
+#: .\core\models.py:45
+msgid "Design if the plan is Big"
+msgstr "Designe si le plan est Grand"
+
+#: .\core\models.py:49
+#, python-brace-format
+msgid "{self.name} Pricing Plan [{self.price}]"
+msgstr " {self.name} Plan de tarification [{self.price}]"
+
+#: .\core\models.py:52
+msgid "Pricing Plan"
+msgstr "Plan de tarification"
+
+#: .\core\models.py:53
+msgid "Pricing Plans"
+msgstr "Plans de tarification"
+
+#: .\core\models.py:58
+msgid "Resume"
+msgstr "Resumer"
+
+#: .\core\models.py:59
+msgid "Thumbnail"
+msgstr "Thumbnail"
+
+#: .\core\models.py:60
+msgid "Te video file"
+msgstr "Le fichier vidéo"
+
+#: .\core\models.py:61
+msgid "Remote storage link"
+msgstr "Lien de stockage à distance"
+
+#: .\core\models.py:62
+msgid "Youtube link"
+msgstr "Lien Youtube"
+
+#: .\core\models.py:63 .\core\models.py:85
+msgid "Design if the proof is available"
+msgstr "Designe si la preuve est disponible"
+
+#: .\core\models.py:68
+#, python-brace-format
+msgid "{self.resume}"
+msgstr ""
+
+#: .\core\models.py:73
+msgid "One of the fields video, youtube_link and link must be provided"
+msgstr "Un des champs vidéo, youtube_link et lien doit être fourni"
+
+#: .\core\models.py:76
+msgid "Video Proof"
+msgstr "Preuve vidéo"
+
+#: .\core\models.py:77
+msgid "Video Proofs"
+msgstr "Preuves vidéo"
+
+#: .\core\models.py:81
+msgid "Date"
+msgstr "Date"
+
+#: .\core\models.py:82
+msgid "Encrypted text"
+msgstr "Texte crypté"
+
+#: .\core\models.py:83
+msgid "Key"
+msgstr "Clé"
+
+#: .\core\models.py:84
+msgid "Display the key"
+msgstr "Afficher la clé"
+
+#: .\core\models.py:93
+msgid "Encrypted Proof"
+msgstr "Preuve chiffrée"
+
+#: .\core\models.py:94
+msgid "Encrypted Proofs"
+msgstr "Preuves chiffrée"
+
+#: .\core\models.py:98
+msgid "Fixed"
+msgstr "Fixed"
+
+#: .\core\models.py:99
+msgid "Half / Full Time"
+msgstr "Temps partiel / Temps plein"
+
+#: .\core\models.py:100
+msgid "Full Time"
+msgstr "Temps plein"
+
+#: .\core\models.py:105
+msgid "Date du jeu"
+msgstr ""
+
+#: .\core\models.py:106
+msgid "Odds"
+msgstr "Cotes"
+
+#: .\core\models.py:107
+msgid "Odds type"
+msgstr "Type de cote"
+
+#: .\core\models.py:108
+msgid "Match Id"
+msgstr "Id du match"
+
+#: .\core\models.py:110 .\core\models.py:133
+msgid "Design if the Match is available"
+msgstr "Designe si le Match est disponible"
+
+#: .\core\models.py:125
+msgid "Match"
+msgstr "Match"
+
+#: .\core\models.py:126
+msgid "Matches"
+msgstr "Matches"
+
+#: .\core\models.py:130
+msgid "User number"
+msgstr "Numéro d'utilisateur"
+
+#: .\core\models.py:131
+msgid "Winning matches"
+msgstr "Matchs gagnants"
+
+#: .\core\models.py:132
+msgid "People love"
+msgstr "Fans"
+
+#: .\core\models.py:141
+msgid "Counter"
+msgstr "Compteur"
+
+#: .\core\models.py:142
+msgid "Counters"
+msgstr "Compteurs"
+
+#: .\core\views.py:20
+msgid "Home"
+msgstr "Accueil"
+
+#: .\core\views.py:34 .\templates\base.html:65 .\templates\base.html:94
+msgid "About"
+msgstr "A propos"
+
+#: .\core\views.py:45
+msgid "Trust"
+msgstr "Nous croire"
+
+#: .\core\views.py:56
+msgid "Visuals proofs"
+msgstr "Preuve Visuels"
+
+#: .\templates\base.html:71 .\templates\base.html:100
+#: .\templates\home\index.html:198
+msgid "Next Matches"
+msgstr "Prochains matchs"
+
+#: .\templates\base.html:77 .\templates\base.html:106
+msgid "Contact"
+msgstr "Contact"
+
+#: .\templates\base.html:80 .\templates\base.html:109
+msgid "Trust Page"
+msgstr "Page de confiance"
+
+#: .\templates\home\index.html:79
+msgid "About Us"
+msgstr "A propos de Nous"
+
+#: .\templates\home\index.html:82
+msgid ""
+"\n"
+"                        An idea about what we do.\n"
+"                    "
+msgstr ""
+"\n"
+"Une idée de ce que nous faisons"
+
+#: .\templates\home\index.html:90
+#, python-format
+msgid ""
+"\n"
+"                            We provide fixed football matches to let you "
+"start profitable betting. We have a partnership\n"
+"                            with a big insider, and we redirect you to his "
+"services. The info is 100%% correct. We are\n"
+"                            here to mediate to him.\n"
+"                        "
+msgstr ""
+"\n"
+"Nous fournissons des matchs de football fixes pour vous permettre de "
+"commencer à parier de manière rentable. Nous avons un partenariat avec un "
+"grand initié, et nous vous redirigeons vers ses services. Les informations "
+"sont correctes à 100%. Nous sommes sommes là pour servir de médiateur avec "
+"lui."
+
+#: .\templates\home\index.html:96
+msgid ""
+"\n"
+"                            We know that you shouldn't and mustn't believe "
+"us. And, actually, we can't do much for your\n"
+"                            trust. We don't give free matches. The main "
+"reason: we have enough clients who buy our\n"
+"                            matches in subscriptions and get them "
+"automatically.\n"
+"                        "
+msgstr ""
+"\n"
+"Nous savons que vous ne devriez pas et ne devez pas nous croire. Et, en "
+"fait, nous ne pouvons pas faire grand chose pour votre confiance. Nous ne "
+"donnons pas de correspondances gratuites. La raison principale est que nous "
+"avons suffisamment de clients qui achètent nos correspondances par "
+"abonnement et les obtiennent automatiquement."
+
+#: .\templates\home\index.html:114
+msgid "Our Services"
+msgstr "Nos services"
+
+#: .\templates\home\index.html:117
+msgid ""
+"\n"
+"                    Here is the whole process.\n"
+"                    "
+msgstr ""
+"\n"
+"Voici l'ensemble du processus."
+
+#: .\templates\home\index.html:129
+msgid "Access Matches"
+msgstr "Accès au Matches"
+
+#: .\templates\home\index.html:130
+msgid ""
+"We access the list of available matches from our\n"
+"                                    partner."
+msgstr ""
+"Nous accédons à la liste des correspondances disponibles auprès de notre "
+"partenaire"
+
+#: .\templates\home\index.html:139
+msgid "Give you access"
+msgstr "Vous donner accès"
+
+#: .\templates\home\index.html:140
+msgid ""
+"We give you access to information through their\n"
+"                                    bot."
+msgstr "Nous vous donnons accès à des informations par le biais de leur bot."
+
+#: .\templates\home\index.html:150
+msgid "More About Us"
+msgstr "En savoir plus sur nous"
+
+#: .\templates\home\index.html:164
+msgid "Order your Pack"
+msgstr "Commandez votre pack"
+
+#: .\templates\home\index.html:167
+msgid "We can be reached here:"
+msgstr "Vous pouvez nous joindre ici"
+
+#: .\templates\home\index.html:174
+msgid ""
+"\n"
+"                                        Please use this email address or "
+"telegram link if you want to make your order or\n"
+"                                        ask any questions\n"
+"                                    "
+msgstr ""
+"\n"
+"Veuillez utiliser cette adresse e-mail ou ce lien télégraphique si vous "
+"souhaitez passer votre commande ou poser des questions."
+
+#: .\templates\home\index.html:201
+msgid ""
+"\n"
+"                        Here is a list of next match we are going to make "
+"money with.\n"
+"                    "
+msgstr ""
+"\n"
+"Voici une liste du prochain match avec lequel nous allons gagner de l'argent."
+
+#: .\templates\home\index.html:204
+msgid ""
+"\n"
+"                        Please choose the match, pay for it, using our "
+"payment gate, to get the match immediately.\n"
+"                    "
+msgstr ""
+"\n"
+"Veuillez choisir le match, payer ou le payer, en utilisant notre portail de "
+"paiement, pour obtenir le match immédiatement."
+
+#: .\templates\home\index.html:264
+msgid "Subscriptions"
+msgstr "Abonnements"
+
+#: .\templates\home\index.html:267
+msgid "You can take a pack of match to maximize profit! "
+msgstr "Vous pouvez prendre un pack de matches pour maximiser le profit !"
+
+#: .\templates\home\index.html:268
+msgid " Here is the available plans."
+msgstr "Voici les plans disponibles."
+
+#: .\templates\home\index.html:295 .\templates\home\index.html:325
+msgid "Buy Now"
+msgstr "Acheter maintenant"
+
+#: .\templates\home\index.html:345
+msgid "Winning Matches"
+msgstr "Matches gagnants"
+
+#: .\templates\home\index.html:356
+msgid "No. of Clients"
+msgstr "No. de clients"
+
+#: .\templates\home\index.html:367
+msgid "Peoples Love"
+msgstr "Fans"
+
+#: .\templates\home\index.html:443
+msgid ""
+"\n"
+"                    FAQ Section"
+msgstr ""
+"\n"
+"Section FAQ"
+
+#: .\templates\home\index.html:447
+msgid ""
+"Questions people often ask. Anyway, if the questions is still remain - just "
+"contact\n"
+"                        us."
+msgstr ""
+"Les questions que les gens se posent souvent. Quoi qu'il en soit, si les "
+"questions ne sont toujours pas résolues, il suffit de nous contacter."
+
+#: .\templates\home\index.html:463
+msgid "What payment ways do you accept ?"
+msgstr "Quels moyens de paiement acceptez-vous ?"
+
+#: .\templates\home\index.html:472
+msgid ""
+"\n"
+"                                            We accept crypto payments only! "
+"We don't accept Paypal, Skrill or Western\n"
+"                                            Union. You can pay via:\n"
+"                                        "
+msgstr ""
+"\n"
+"Nous n'acceptons que les paiements en crypto-monnaie ! Nous n'acceptons pas "
+"Paypal, Skrill ou Western Union. Union. Vous pouvez payer via :"
+
+#: .\templates\home\index.html:480
+msgid ""
+"\n"
+"                                            Other types of payment in "
+"agreement with our support.\n"
+"                                        "
+msgstr ""
+"\n"
+"Autres types de paiement en accord avec notre support."
+
+#: .\templates\home\index.html:497
+msgid "What do 2.5+ 5.0+ 10.0+ odds mean ?"
+msgstr "Que signifient les cotes 2.5+ 5.0+ 10.0+ ?"
+
+#: .\templates\home\index.html:505
+msgid ""
+"\n"
+"                                            2.5+ means the odd is higher "
+"than 2.5, for example 2.8. If you see the odd\n"
+"                                            10.0+ that means you will get "
+"the odd more than 10.0 for example 11.0 or\n"
+"                                            14.0 etc.\n"
+"                                        "
+msgstr ""
+"\n"
+"2,5+ signifie que la cote est supérieure à 2,5, par exemple 2,8. Si vous "
+"voyez la cote 10.0+, cela signifie que vous obtiendrez une cote supérieure à "
+"10.0, par exemple 11.0 ou 14.0, etc.\n"
+"14.0 etc."
+
+#: .\templates\home\index.html:522
+msgid "What does \"odd type\" mean?"
+msgstr "Que signifie \"type  de cote\" ?"
+
+#: .\templates\home\index.html:530
+msgid ""
+"\n"
+"                                            You can bet on different match "
+"options, which do have different odds:\n"
+"                                        "
+msgstr ""
+"\n"
+"Vous pouvez parier sur différentes options de match, qui ont des cotes "
+"différentes :"
+
+#: .\templates\home\index.html:536
+msgid ""
+"\n"
+"                                            Odd type \"full time\" means you "
+"will get the result of the match (1 or 2 team\n"
+"                                            wins or draw) with no correct "
+"score\n"
+"                                        "
+msgstr ""
+"\n"
+"Le type de cote\" full time \" signifie que vous obtiendrez le résultat du "
+"match (1 ou 2 équipes gagne ou fait match nul) sans score correct"
+
+#: .\templates\home\index.html:542
+msgid ""
+"\n"
+"                                            Odd type \"correct score\" mean "
+"you will get the correct score of the match (1\n"
+"                                            team wins 2:1)\n"
+"                                        "
+msgstr ""
+"\n"
+"Le type de cote \"score correct\" signifie que vous obtiendrez le score "
+"correct du match (1 équipe gagne 2:1)"
+
+#: .\templates\home\index.html:548
+msgid ""
+"\n"
+"                                            Odd type \"ft/ht\" means you "
+"will get the results of the first and the second\n"
+"                                            halftimes.\n"
+"                                        "
+msgstr ""
+"\n"
+"Le type de cote \"ft/ht\" signifie que vous obtiendrez les résultats de la "
+"première et de la seconde mi-temps."
+
+#: .\templates\home\index.html:565
+msgid "Where can I bet?"
+msgstr "Où puis-je parier ?"
+
+#: .\templates\home\index.html:573
+msgid ""
+"\n"
+"                                            Almost all online sportbooks "
+"provide our matches. Also you can bet in\n"
+"                                            offline bookies.\n"
+"                                        "
+msgstr ""
+"\n"
+"Presque tous les bookmaker de sport en ligne proposent nos matchs. Vous "
+"pouvez également parier avec les bookmakers hors ligne."
+
+#: .\templates\home\index.html:592
+msgid " Where can I get Bitcoin?"
+msgstr "Où puis-je me procurer des bitcoins ?"
+
+#: .\templates\home\index.html:600
+msgid ""
+"\n"
+"                                            It depends on your country. "
+"Please google how to buy crypto\n"
+"                                            yourself\n"
+"                                        "
+msgstr ""
+"\n"
+"Cela dépend de votre pays. Veuillez chercher sur Google comment acheter des "
+"crypto vous-même"
+
+#: .\templates\home\index.html:617
+msgid "What is your accuracy ?"
+msgstr "Quelle est votre précision ?"
+
+#: .\templates\home\index.html:625
+#, python-format
+msgid ""
+"\n"
+"                                            Our accuracy is in range 95%% "
+"100%%, because matches are fixed. It means they\n"
+"                                            always win.\n"
+"                                        "
+msgstr ""
+"\n"
+"Notre précision est de l'ordre de 95 % à 100 %, car les correspondances sont "
+"fixes. Cela signifie qu'ils gagnent toujours."
+
+#: .\templates\marketing\terms.html:50 .\templates\marketing\terms.html:136
+msgid "AGREEMENT TO TERMS"
+msgstr "ACCORD SUR LES CONDITIONS"
+
+#: .\templates\marketing\terms.html:53
+msgid ""
+"INTELLECTUAL PROPERTY\n"
+"                                        RIGHTS"
+msgstr ""
+
+#: .\templates\marketing\terms.html:57
+msgid ""
+"USER\n"
+"                                        REPRESENTATIONS"
+msgstr ""
+
+#: .\templates\marketing\terms.html:61
+msgid "PRODUCTS"
+msgstr ""
+
+#: .\templates\marketing\terms.html:64
+msgid ""
+"PURCHASES AND\n"
+"                                        PAYMENT"
+msgstr ""
+
+#: .\templates\marketing\terms.html:72
+msgid ""
+"PROHIBITED\n"
+"                                        ACTIVITIES"
+msgstr ""
+
+#: .\templates\marketing\terms.html:76
+msgid ""
+"USER GENERATED\n"
+"                                        CONTRIBUTIONS"
+msgstr ""
+
+#: .\templates\marketing\terms.html:80
+msgid ""
+"CONTRIBUTION\n"
+"                                        LICENSE"
+msgstr ""
+
+#: .\templates\marketing\terms.html:84
+msgid "SUBMISSIONS"
+msgstr ""
+
+#: .\templates\marketing\terms.html:87
+msgid "SITE MANAGEMENT"
+msgstr ""
+
+#: .\templates\marketing\terms.html:94
+msgid ""
+"TERM AND\n"
+"                                        TERMINATION"
+msgstr ""
+
+#: .\templates\marketing\terms.html:98
+msgid ""
+"MODIFICATIONS AND\n"
+"                                        INTERRUPTIONS"
+msgstr ""
+
+#: .\templates\marketing\terms.html:102
+msgid "GOVERNING LAW"
+msgstr ""
+
+#: .\templates\marketing\terms.html:105
+msgid "CORRECTIONS"
+msgstr ""
+
+#: .\templates\marketing\terms.html:108
+msgid "DISCLAIMER"
+msgstr ""
+
+#: .\templates\marketing\terms.html:115
+msgid ""
+"LIMITATIONS OF\n"
+"                                        LIABILITY"
+msgstr ""
+
+#: .\templates\marketing\terms.html:119
+msgid "INDEMNIFICATION"
+msgstr ""
+
+#: .\templates\marketing\terms.html:122
+msgid "USER DATA"
+msgstr ""
+
+#: .\templates\marketing\terms.html:125
+msgid "MISCELLANEOUS"
+msgstr ""
+
+#: .\templates\marketing\terms.html:128
+msgid "CONTACT US"
+msgstr ""
+
+#: .\templates\marketing\terms.html:140
+msgid ""
+"\n"
+"                                    These Terms of Use constitute a legally "
+"binding agreement made between you, whether\n"
+"                                    personally or on behalf of an entity "
+"(“you”) and IDG, concerning your access to and\n"
+"                                    use of the idg.com website as well as "
+"any other media form, media channel, mobile\n"
+"                                    website or mobile application related, "
+"linked, or otherwise connected thereto\n"
+"                                    (collectively, the “Site”). You agree "
+"that by accessing the Site, you have read,\n"
+"                                    understood, and agreed to be bound by "
+"all of these Terms of Use. IF YOU DO NOT AGREE\n"
+"                                    WITH ALL OF THESE TERMS OF USE, THEN YOU "
+"ARE EXPRESSLY PROHIBITED FROM USING THE\n"
+"                                    SITE AND YOU MUST DISCONTINUE USE "
+"IMMEDIATELY.\n"
+"                                "
+msgstr ""
+
+#: .\templates\marketing\terms.html:152
+msgid ""
+"\n"
+"                                    Supplemental terms and conditions or "
+"documents that may be posted on the Site from\n"
+"                                    time to time are hereby expressly "
+"incorporated herein by reference. We reserve the\n"
+"                                    right, in our sole discretion, to make "
+"changes or modifications to these Terms of\n"
+"                                    Use at any time and for any reason. We "
+"will alert you about any changes by updating\n"
+"                                    the “Last updated” date of these Terms "
+"of Use, and you waive any right to receive\n"
+"                                    specific notice of each such change. "
+"Please ensure that you check the applicable\n"
+"                                    Terms every time you use our Site so "
+"that you understand which Terms apply. You will\n"
+"                                    be subject to, and will be deemed to "
+"have been made aware of and to have accepted,\n"
+"                                    the changes in any revised Terms of Use "
+"by your continued use of the Site after the\n"
+"                                    date such revised Terms of Use are "
+"posted.\n"
+"                                "
+msgstr ""
+
+#: .\templates\marketing\terms.html:166
+msgid ""
+"\n"
+"                                    The information provided on the Site is "
+"not intended for distribution to or use by\n"
+"                                    any person or entity in any jurisdiction "
+"or country where such distribution or use\n"
+"                                    would be contrary to law or regulation "
+"or which would subject us to any registration\n"
+"                                    requirement within such jurisdiction or "
+"country. Accordingly, those persons who\n"
+"                                    choose to access the Site from other "
+"locations do so on their own initiative and are\n"
+"                                    solely responsible for compliance with "
+"local laws, if and to the extent local laws\n"
+"                                    are applicable.\n"
+"                                "
+msgstr ""
+
+#: .\templates\marketing\terms.html:180
+msgid ""
+"\n"
+"                                INTELLECTUAL PROPERTY RIGHTS\n"
+"                            "
+msgstr ""
+
+#: .\templates\marketing\terms.html:187
+msgid ""
+"\n"
+"                                    Unless otherwise indicated, the Site is "
+"our proprietary property and all source\n"
+"                                    code, databases, functionality, "
+"software, website designs, audio, video, text,\n"
+"                                    photographs, and graphics on the Site "
+"(collectively, the “Content”) and the\n"
+"                                    trademarks, service marks, and logos "
+"contained therein (the “Marks”) are owned or\n"
+"                                    controlled by us or licensed to us, and "
+"are protected by copyright and trademark\n"
+"                                    laws and various other intellectual "
+"property rights and unfair competition laws of\n"
+"                                    the United States, international "
+"copyright laws, and international conventions. The\n"
+"                                    Content and the Marks are provided on "
+"the Site “AS IS” for your information and\n"
+"                                    personal use only. Except as expressly "
+"provided in these Terms of Use, no part of\n"
+"                                    the Site and no Content or Marks may be "
+"copied, reproduced, aggregated, republished,\n"
+"                                    uploaded, posted, publicly displayed, "
+"encoded, translated, transmitted, distributed,\n"
+"                                    sold, licensed, or otherwise exploited "
+"for any commercial purpose whatsoever,\n"
+"                                    without our express prior written "
+"permission.\n"
+"                                "
+msgstr ""
+
+#: .\templates\marketing\terms.html:204
+msgid ""
+"\n"
+"                                    Provided that you are eligible to use "
+"the Site, you are granted a limited license to\n"
+"                                    access and use the Site and to download "
+"or print a copy of any portion of the\n"
+"                                    Content to which you have properly "
+"gained access solely for your personal,\n"
+"                                    non-commercial use. We reserve all "
+"rights not expressly granted to you in and to the\n"
+"                                    Site, the Content and the Marks.\n"
+"                                "
+msgstr ""
+
+#: .\templates\marketing\terms.html:216
+msgid ""
+"\n"
+"                                USER REPRESENTATIONS\n"
+"                            "
+msgstr ""
+
+#: .\templates\marketing\terms.html:223
+msgid ""
+"\n"
+"                                    By using the Site, you represent and "
+"warrant that: (1) you have the legal capacity\n"
+"                                    and you agree to comply with these Terms "
+"of Use; (2) you are not a minor in the\n"
+"                                    jurisdiction in which you reside; (3) "
+"you will not access the Site through automated\n"
+"                                    or non-human means, whether through a "
+"bot, script or otherwise; (4) you will not use\n"
+"                                    the Site for any illegal or unauthorized "
+"purpose; and (5) your use of the Site will\n"
+"                                    not violate any applicable law or "
+"regulation.\n"
+"                                "
+msgstr ""
+
+#: .\templates\marketing\terms.html:233
+msgid ""
+"\n"
+"                                    If you provide any information that is "
+"untrue, inaccurate, not current, or\n"
+"                                    incomplete, we have the right to suspend "
+"or terminate your account and refuse any\n"
+"                                    and all current or future use of the "
+"Site (or any portion thereof).\n"
+"                                "
+msgstr ""
+
+#: .\templates\marketing\terms.html:244
+msgid ""
+"\n"
+"                                PRODUCTS\n"
+"                            "
+msgstr ""
+
+#: .\templates\marketing\terms.html:251
+msgid ""
+"\n"
+"                                    We make every effort to display as "
+"accurately as possible the colors, features,\n"
+"                                    specifications, and details of the "
+"products available on the Site. However, we do\n"
+"                                    not guarantee that the colors, features, "
+"specifications, and details of the products\n"
+"                                    will be accurate, complete, reliable, "
+"current, or free of other errors, and your\n"
+"                                    electronic display may not accurately "
+"reflect the actual colors and details of the\n"
+"                                    products. All products are subject to "
+"availability, and we cannot guarantee that\n"
+"                                    items will be in stock. We reserve the "
+"right to discontinue any products at any time\n"
+"                                    for any reason. Prices for all products "
+"are subject to change.\n"
+"                                "
+msgstr ""
+
+#: .\templates\marketing\terms.html:266
+msgid ""
+"\n"
+"                                PAYMENT\n"
+"                            "
+msgstr ""
+
+#: .\templates\marketing\terms.html:273
+msgid ""
+"\n"
+"                                    We accept the following forms of "
+"payment:\n"
+"                                "
+msgstr ""
+
+#: .\templates\marketing\terms.html:278
+msgid ""
+"\n"
+"                                    You agree to provide current, complete, "
+"and accurate purchase and account\n"
+"                                    information for all purchases made via "
+"the Site. You further agree to promptly\n"
+"                                    update account and payment information, "
+"including email address, payment method, and\n"
+"                                    payment card expiration date, so that we "
+"can complete your transactions and contact\n"
+"                                    you as needed. Sales tax will be added "
+"to the price of purchases as deemed required\n"
+"                                    by us. We may change prices at any time. "
+"All payments shall be in __________.\n"
+"                                "
+msgstr ""
+
+#: .\templates\marketing\terms.html:288
+msgid ""
+"\n"
+"                                    You agree to pay all charges at the "
+"prices then in effect for your purchases and any\n"
+"                                    applicable shipping fees, and you "
+"authorize us to charge your chosen payment\n"
+"                                    provider for any such amounts upon "
+"placing your order. We reserve the right to\n"
+"                                    correct any errors or mistakes in "
+"pricing, even if we have already requested or\n"
+"                                    received payment.\n"
+"                                "
+msgstr ""
+
+#: .\templates\marketing\terms.html:297
+msgid ""
+"\n"
+"                                    We reserve the right to refuse any order "
+"placed through the Site. We may, in our\n"
+"                                    sole discretion, limit or cancel "
+"quantities purchased per person, per household, or\n"
+"                                    per order. These restrictions may "
+"include orders placed by or under the same\n"
+"                                    customer account, the same payment "
+"method, and/or orders that use the same billing\n"
+"                                    or shipping address. We reserve the "
+"right to limit or prohibit orders that, in our\n"
+"                                    sole judgment, appear to be placed by "
+"dealers, resellers, or distributors.\n"
+"                                "
+msgstr ""
+
+#: .\templates\marketing\terms.html:310
+msgid ""
+"\n"
+"                                PROHIBITED ACTIVITIES\n"
+"                            "
+msgstr ""
+
+#: .\templates\marketing\terms.html:317
+msgid ""
+"\n"
+"                                    You may not access or use the Site for "
+"any purpose other than that for which we make\n"
+"                                    the Site available. The Site may not be "
+"used in connection with any commercial\n"
+"                                    endeavors except those that are "
+"specifically endorsed or approved by us.\n"
+"                                "
+msgstr ""
+
+#: .\templates\marketing\terms.html:324
+msgid ""
+"\n"
+"                                    As a user of the Site, you agree not "
+"to:\n"
+"                                "
+msgstr ""
+
+#: .\templates\marketing\terms.html:331
+msgid ""
+"\n"
+"                                            Systematically retrieve data or "
+"other content from the Site to create or\n"
+"                                            compile, directly or indirectly, "
+"a collection, compilation, database, or\n"
+"                                            directory without written "
+"permission from us.\n"
+"                                        "
+msgstr ""
+
+#: .\templates\marketing\terms.html:338
+msgid ""
+"\n"
+"                                            Trick, defraud, or mislead us "
+"and other users, especially in any attempt to\n"
+"                                            learn sensitive account "
+"information such as user passwords.\n"
+"                                        "
+msgstr ""
+
+#: .\templates\marketing\terms.html:344
+msgid ""
+"\n"
+"                                            Circumvent, disable, or "
+"otherwise interfere with security-related features\n"
+"                                            of the Site, including features "
+"that prevent or restrict the use or copying\n"
+"                                            of any Content or enforce "
+"limitations on the use of the Site and/or the\n"
+"                                            Content contained therein.\n"
+"                                        "
+msgstr ""
+
+#: .\templates\marketing\terms.html:352
+msgid ""
+"\n"
+"                                            Disparage, tarnish, or otherwise "
+"harm, in our opinion, us and/or the Site.\n"
+"                                        "
+msgstr ""
+
+#: .\templates\marketing\terms.html:357
+msgid ""
+"\n"
+"                                            Use any information obtained "
+"from the Site in order to harass, abuse, or\n"
+"                                            harm another person.\n"
+"                                        "
+msgstr ""
+
+#: .\templates\marketing\terms.html:363
+msgid ""
+"\n"
+"                                            Make improper use of our support "
+"services or submit false reports of abuse\n"
+"                                            or misconduct.\n"
+"                                        "
+msgstr ""
+
+#: .\templates\marketing\terms.html:369
+msgid ""
+"\n"
+"                                            Use the Site in a manner "
+"inconsistent with any applicable laws or\n"
+"                                            regulations.\n"
+"                                        "
+msgstr ""
+
+#: .\templates\marketing\terms.html:375
+msgid ""
+"\n"
+"                                            Engage in unauthorized framing "
+"of or linking to the Site.\n"
+"                                        "
+msgstr ""
+
+#: .\templates\marketing\terms.html:380
+msgid ""
+"\n"
+"                                            Upload or transmit (or attempt "
+"to upload or to transmit) viruses, Trojan\n"
+"                                            horses, or other material, "
+"including excessive use of capital letters and\n"
+"                                            spamming (continuous posting of "
+"repetitive text), that interferes with any\n"
+"                                            party’s uninterrupted use and "
+"enjoyment of the Site or modifies, impairs,\n"
+"                                            disrupts, alters, or interferes "
+"with the use, features, functions,\n"
+"                                            operation, or maintenance of the "
+"Site.\n"
+"                                        "
+msgstr ""
+
+#: .\templates\marketing\terms.html:390
+msgid ""
+"\n"
+"                                            Engage in any automated use of "
+"the system, such as using scripts to send\n"
+"                                            comments or messages, or using "
+"any data mining, robots, or similar data\n"
+"                                            gathering and extraction tools.\n"
+"\n"
+"                                        "
+msgstr ""
+
+#: .\templates\marketing\terms.html:398
+msgid ""
+"\n"
+"                                            Delete the copyright or other "
+"proprietary rights notice from any Content.\n"
+"                                        "
+msgstr ""
+
+#: .\templates\marketing\terms.html:403
+msgid ""
+"\n"
+"                                            Attempt to impersonate another "
+"user or person or use the username of another\n"
+"                                            user.\n"
+"                                        "
+msgstr ""
+
+#: .\templates\marketing\terms.html:409
+msgid ""
+"\n"
+"                                            Upload or transmit (or attempt "
+"to upload or to transmit) any material that\n"
+"                                            acts as a passive or active "
+"information collection or transmission\n"
+"                                            mechanism, including without "
+"limitation, clear graphics interchange formats\n"
+"                                            (“gifs”), 1×1 pixels, web bugs, "
+"cookies, or other similar devices (sometimes\n"
+"                                            referred to as “spyware” or "
+"“passive collection mechanisms” or “pcms”).\n"
+"                                        "
+msgstr ""
+
+#: .\templates\marketing\terms.html:418
+msgid ""
+"\n"
+"                                            Interfere with, disrupt, or "
+"create an undue burden on the Site or the\n"
+"                                            networks or services connected "
+"to the Site.\n"
+"                                        "
+msgstr ""
+
+#: .\templates\marketing\terms.html:424
+msgid ""
+"\n"
+"                                            Harass, annoy, intimidate, or "
+"threaten any of our employees or agents\n"
+"                                            engaged in providing any portion "
+"of the Site to you.\n"
+"                                        "
+msgstr ""
+
+#: .\templates\marketing\terms.html:430
+msgid ""
+"\n"
+"                                            Attempt to bypass any measures "
+"of the Site designed to prevent or restrict\n"
+"                                            access to the Site, or any "
+"portion of the Site.\n"
+"                                        "
+msgstr ""
+
+#: .\templates\marketing\terms.html:436
+msgid ""
+"\n"
+"                                            Copy or adapt the Site’s "
+"software, including but not limited to Flash, PHP,\n"
+"                                            HTML, JavaScript, or other "
+"code.\n"
+"                                        "
+msgstr ""
+
+#: .\templates\marketing\terms.html:442
+msgid ""
+"\n"
+"                                            Except as permitted by "
+"applicable law, decipher, decompile, disassemble, or\n"
+"                                            reverse engineer any of the "
+"software comprising or in any way making up a\n"
+"                                            part of the Site.\n"
+"                                        "
+msgstr ""
+
+#: .\templates\marketing\terms.html:449
+msgid ""
+"\n"
+"                                            Except as may be the result of "
+"standard search engine or Internet browser\n"
+"                                            usage, use, launch, develop, or "
+"distribute any automated system, including\n"
+"                                            without limitation, any spider, "
+"robot, cheat utility, scraper, or offline\n"
+"                                            reader that accesses the Site, "
+"or using or launching any unauthorized script\n"
+"                                            or other software.\n"
+"                                        "
+msgstr ""
+
+#: .\templates\marketing\terms.html:458
+msgid ""
+"\n"
+"                                            Use a buying agent or purchasing "
+"agent to make purchases on the Site.\n"
+"                                        "
+msgstr ""
+
+#: .\templates\marketing\terms.html:463
+msgid ""
+"\n"
+"                                            Make any unauthorized use of the "
+"Site, including collecting usernames and/or\n"
+"                                            email addresses of users by "
+"electronic or other means for the purpose of\n"
+"                                            sending unsolicited email, or "
+"creating user accounts by automated means or\n"
+"                                            under false pretenses.\n"
+"                                        "
+msgstr ""
+
+#: .\templates\marketing\terms.html:471
+msgid ""
+"\n"
+"                                            Use the Site as part of any "
+"effort to compete with us or otherwise use the\n"
+"                                            Site and/or the Content for any "
+"revenue-generating endeavor or commercial\n"
+"                                            enterprise.\n"
+"                                        "
+msgstr ""
+
+#: .\templates\marketing\terms.html:481
+msgid ""
+"\n"
+"\n"
+"                                "
+msgstr ""
+
+#: .\templates\marketing\terms.html:489
+msgid ""
+"\n"
+"                                USER GENERATED CONTRIBUTIONS\n"
+"                            "
+msgstr ""
+
+#: .\templates\marketing\terms.html:496
+msgid ""
+"\n"
+"                                    The Site does not offer users to submit "
+"or post content. We may provide you with the\n"
+"                                    opportunity to create, submit, post, "
+"display, transmit, perform, publish,\n"
+"                                    distribute, or broadcast content and "
+"materials to us or on the Site, including but\n"
+"                                    not limited to text, writings, video, "
+"audio, photographs, graphics, comments,\n"
+"                                    suggestions, or personal information or "
+"other material (collectively,\n"
+"                                    \"Contributions\"). Contributions may be "
+"viewable by other users of the Site and\n"
+"                                    through third-party websites. As such, "
+"any Contributions you transmit may be treated\n"
+"                                    in accordance with the Site Privacy "
+"Policy. When you create or make available any\n"
+"                                    Contributions, you thereby represent and "
+"warrant that:\n"
+"                                "
+msgstr ""
+
+#: .\templates\marketing\terms.html:511
+msgid ""
+"\n"
+"                                            The creation, distribution, "
+"transmission, public display, or performance,\n"
+"                                            and the accessing, downloading, "
+"or copying of your Contributions do not and\n"
+"                                            will not infringe the "
+"proprietary rights, including but not limited to the\n"
+"                                            copyright, patent, trademark, "
+"trade secret, or moral rights of any third\n"
+"                                            party.\n"
+"                                        "
+msgstr ""
+
+#: .\templates\marketing\terms.html:520
+msgid ""
+"\n"
+"                                            You are the creator and owner of "
+"or have the necessary licenses, rights,\n"
+"                                            consents, releases, and "
+"permissions to use and to authorize us, the Site,\n"
+"                                            and other users of the Site to "
+"use your Contributions in any manner\n"
+"                                            contemplated by the Site and "
+"these Terms of Use.\n"
+"                                        "
+msgstr ""
+
+#: .\templates\marketing\terms.html:528
+msgid ""
+"\n"
+"                                            You have the written consent, "
+"release, and/or permission of each and every\n"
+"                                            identifiable individual person "
+"in your Contributions to use the name or\n"
+"                                            likeness of each and every such "
+"identifiable individual person to enable\n"
+"                                            inclusion and use of your "
+"Contributions in any manner contemplated by the\n"
+"                                            Site and these Terms of Use.\n"
+"                                        "
+msgstr ""
+
+#: .\templates\marketing\terms.html:537
+msgid ""
+"\n"
+"                                            Your Contributions are not "
+"false, inaccurate, or misleading.\n"
+"                                        "
+msgstr ""
+
+#: .\templates\marketing\terms.html:542
+msgid ""
+"\n"
+"                                            Your Contributions are not "
+"unsolicited or unauthorized advertising,\n"
+"                                            promotional materials, pyramid "
+"schemes, chain letters, spam, mass mailings,\n"
+"                                            or other forms of solicitation.\n"
+"                                        "
+msgstr ""
+
+#: .\templates\marketing\terms.html:549
+msgid ""
+"\n"
+"                                            Your Contributions are not "
+"obscene, lewd, lascivious, filthy, violent,\n"
+"                                            harassing, libelous, slanderous, "
+"or otherwise objectionable (as determined\n"
+"                                            by us).\n"
+"                                        "
+msgstr ""
+
+#: .\templates\marketing\terms.html:556
+msgid ""
+"\n"
+"                                            Your Contributions do not "
+"ridicule, mock, disparage, intimidate, or abuse\n"
+"                                            anyone.\n"
+"                                        "
+msgstr ""
+
+#: .\templates\marketing\terms.html:562
+msgid ""
+"\n"
+"                                            Your Contributions are not used "
+"to harass or threaten (in the legal sense of\n"
+"                                            those terms) any other person "
+"and to promote violence against a specific\n"
+"                                            person or class of people.\n"
+"                                        "
+msgstr ""
+
+#: .\templates\marketing\terms.html:569
+msgid ""
+"\n"
+"                                            Your Contributions do not "
+"violate any applicable law, regulation, or rule.\n"
+"                                        "
+msgstr ""
+
+#: .\templates\marketing\terms.html:574
+msgid ""
+"\n"
+"                                            Your Contributions do not "
+"violate the privacy or publicity rights of any\n"
+"                                            third party.\n"
+"                                        "
+msgstr ""
+
+#: .\templates\marketing\terms.html:580
+msgid ""
+"\n"
+"                                            Your Contributions do not "
+"violate any applicable law concerning child\n"
+"                                            pornography, or otherwise "
+"intended to protect the health or well-being of\n"
+"                                            minors;\n"
+"                                        "
+msgstr ""
+
+#: .\templates\marketing\terms.html:587
+msgid ""
+"\n"
+"                                            Your Contributions do not "
+"include any offensive comments that are connected\n"
+"                                            to race, national origin, "
+"gender, sexual preference, or physical handicap.\n"
+"                                        "
+msgstr ""
+
+#: .\templates\marketing\terms.html:593
+msgid ""
+"\n"
+"                                            Your Contributions do not "
+"otherwise violate, or link to material that\n"
+"                                            violates, any provision of these "
+"Terms of Use, or any applicable law or\n"
+"                                            regulation.\n"
+"                                        "
+msgstr ""
+
+#: .\templates\marketing\terms.html:602
+msgid ""
+"\n"
+"                                    Any use of the Site or the Marketplace "
+"Offerings in violation of the foregoing\n"
+"                                    violates these Terms of Use and may "
+"result in, among other things, termination or\n"
+"                                    suspension of your rights to use the "
+"Site and the Marketplace Offerings.\n"
+"                                "
+msgstr ""
+
+#: .\templates\marketing\terms.html:612
+msgid ""
+"\n"
+"                                CONTRIBUTION LICENSE\n"
+"                            "
+msgstr ""
+
+#: .\templates\marketing\terms.html:619
+msgid ""
+"\n"
+"                                    You and Site agree that we may access, "
+"store, process, and use any information and\n"
+"                                    personal data that you provide following "
+"the terms of the Privacy Policy and your\n"
+"                                    choices (including settings).\n"
+"                                "
+msgstr ""
+
+#: .\templates\marketing\terms.html:626
+msgid ""
+"\n"
+"                                    By submitting suggestions or other "
+"feedback regarding the Site, you agree that we\n"
+"                                    can use and share such feedback for any "
+"purpose without compensation to you.\n"
+"                                "
+msgstr ""
+
+#: .\templates\marketing\terms.html:632
+msgid ""
+"\n"
+"                                    We do not assert any ownership over your "
+"Contributions. You retain full ownership of\n"
+"                                    all of your Contributions and any "
+"intellectual property rights or other proprietary\n"
+"                                    rights associated with your "
+"Contributions. We are not liable for any statements or\n"
+"                                    representations in your Contributions "
+"provided by you in any area on the Site. You\n"
+"                                    are solely responsible for your "
+"Contributions to the Site and you expressly agree to\n"
+"                                    exonerate us from any and all "
+"responsibility and to refrain from any legal action\n"
+"                                    against us regarding your "
+"Contributions.\n"
+"                                "
+msgstr ""
+
+#: .\templates\marketing\terms.html:646
+msgid ""
+"\n"
+"                                SUBMISSIONS\n"
+"                            "
+msgstr ""
+
+#: .\templates\marketing\terms.html:653
+msgid ""
+"\n"
+"                                    You acknowledge and agree that any "
+"questions, comments, suggestions, ideas,\n"
+"                                    feedback, or other information regarding "
+"the Site or the Marketplace Offerings\n"
+"                                    (\"Submissions\") provided by you to us "
+"are non-confidential and shall become our sole\n"
+"                                    property. We shall own exclusive rights, "
+"including all intellectual property rights,\n"
+"                                    and shall be entitled to the "
+"unrestricted use and dissemination of these Submissions\n"
+"                                    for any lawful purpose, commercial or "
+"otherwise, without acknowledgment or\n"
+"                                    compensation to you. You hereby waive "
+"all moral rights to any such Submissions, and\n"
+"                                    you hereby warrant that any such "
+"Submissions are original with you or that you have\n"
+"                                    the right to submit such Submissions. "
+"You agree there shall be no recourse against\n"
+"                                    us for any alleged or actual "
+"infringement or misappropriation of any proprietary\n"
+"                                    right in your Submissions.\n"
+"                                "
+msgstr ""
+
+#: .\templates\marketing\terms.html:671
+msgid ""
+"\n"
+"                                SITE MANAGEMENT\n"
+"                            "
+msgstr ""
+
+#: .\templates\marketing\terms.html:678
+msgid ""
+"\n"
+"                                    We reserve the right, but not the "
+"obligation, to: (1) monitor the Site for\n"
+"                                    violations of these Terms of Use; (2) "
+"take appropriate legal action against anyone\n"
+"                                    who, in our sole discretion, violates "
+"the law or these Terms of Use, including\n"
+"                                    without limitation, reporting such user "
+"to law enforcement authorities; (3) in our\n"
+"                                    sole discretion and without limitation, "
+"refuse, restrict access to, limit the\n"
+"                                    availability of, or disable (to the "
+"extent technologically feasible) any of your\n"
+"                                    Contributions or any portion thereof; "
+"(4) in our sole discretion and without\n"
+"                                    limitation, notice, or liability, to "
+"remove from the Site or otherwise disable all\n"
+"                                    files and content that are excessive in "
+"size or are in any way burdensome to our\n"
+"                                    systems; and (5) otherwise manage the "
+"Site in a manner designed to protect our\n"
+"                                    rights and property and to facilitate "
+"the proper functioning of the Site and the\n"
+"                                    Marketplace Offerings.\n"
+"                                "
+msgstr ""
+
+#: .\templates\marketing\terms.html:697
+msgid ""
+"\n"
+"                                TERM AND TERMINATION\n"
+"                            "
+msgstr ""
+
+#: .\templates\marketing\terms.html:704
+msgid ""
+"\n"
+"                                    These Terms of Use shall remain in full "
+"force and effect while you use the Site.\n"
+"                                    WITHOUT LIMITING ANY OTHER PROVISION OF "
+"THESE TERMS OF USE, WE RESERVE THE RIGHT TO,\n"
+"                                    IN OUR SOLE DISCRETION AND WITHOUT "
+"NOTICE OR LIABILITY, DENY ACCESS TO AND USE OF\n"
+"                                    THE SITE AND THE MARKETPLACE OFFERINGS "
+"(INCLUDING BLOCKING CERTAIN IP ADDRESSES), TO\n"
+"                                    ANY PERSON FOR ANY REASON OR FOR NO "
+"REASON, INCLUDING WITHOUT LIMITATION FOR BREACH\n"
+"                                    OF ANY REPRESENTATION, WARRANTY, OR "
+"COVENANT CONTAINED IN THESE TERMS OF USE OR OF\n"
+"                                    ANY APPLICABLE LAW OR REGULATION. WE MAY "
+"TERMINATE YOUR USE OR PARTICIPATION IN THE\n"
+"                                    SITE AND THE MARKETPLACE OFFERINGS OR "
+"DELETE ANY CONTENT OR INFORMATION THAT YOU\n"
+"                                    POSTED AT ANY TIME, WITHOUT WARNING, IN "
+"OUR SOLE DISCRETION.\n"
+"                                "
+msgstr ""
+
+#: .\templates\marketing\terms.html:717
+msgid ""
+"\n"
+"                                    If we terminate or suspend your account "
+"for any reason, you are prohibited from\n"
+"                                    registering and creating a new account "
+"under your name, a fake or borrowed name, or\n"
+"                                    the name of any third party, even if you "
+"may be acting on behalf of the third party.\n"
+"                                    In addition to terminating or suspending "
+"your account, we reserve the right to take\n"
+"                                    appropriate legal action, including "
+"without limitation pursuing civil, criminal, and\n"
+"                                    injunctive redress.\n"
+"                                "
+msgstr ""
+
+#: .\templates\marketing\terms.html:730
+msgid ""
+"\n"
+"                                MODIFICATIONS AND INTERRUPTIONS\n"
+"                            "
+msgstr ""
+
+#: .\templates\marketing\terms.html:737
+msgid ""
+"\n"
+"                                    We reserve the right to change, modify, "
+"or remove the contents of the Site at any\n"
+"                                    time or for any reason at our sole "
+"discretion without notice. However, we have no\n"
+"                                    obligation to update any information on "
+"our Site. We also reserve the right to\n"
+"                                    modify or discontinue all or part of the "
+"Marketplace Offerings without notice at any\n"
+"                                    time. We will not be liable to you or "
+"any third party for any modification, price\n"
+"                                    change, suspension, or discontinuance of "
+"the Site or the Marketplace Offerings.\n"
+"                                "
+msgstr ""
+
+#: .\templates\marketing\terms.html:747
+msgid ""
+"\n"
+"                                    We cannot guarantee the Site and the "
+"Marketplace Offerings will be available at all\n"
+"                                    times. We may experience hardware, "
+"software, or other problems or need to perform\n"
+"                                    maintenance related to the Site, "
+"resulting in interruptions, delays, or errors. We\n"
+"                                    reserve the right to change, revise, "
+"update, suspend, discontinue, or otherwise\n"
+"                                    modify the Site or the Marketplace "
+"Offerings at any time or for any reason without\n"
+"                                    notice to you. You agree that we have no "
+"liability whatsoever for any loss, damage,\n"
+"                                    or inconvenience caused by your "
+"inability to access or use the Site or the\n"
+"                                    Marketplace Offerings during any "
+"downtime or discontinuance of the Site or the\n"
+"                                    Marketplace Offerings. Nothing in these "
+"Terms of Use will be construed to obligate\n"
+"                                    us to maintain and support the Site or "
+"the Marketplace Offerings or to supply any\n"
+"                                    corrections, updates, or releases in "
+"connection therewith.\n"
+"                                "
+msgstr ""
+
+#: .\templates\marketing\terms.html:765
+msgid ""
+"\n"
+"                                GOVERNING LAW\n"
+"                            "
+msgstr ""
+
+#: .\templates\marketing\terms.html:772
+msgid ""
+"\n"
+"                                    These terms shall be governed by and "
+"defined following the laws of __________.\n"
+"                                    __________ and yourself irrevocably "
+"consent that the courts of __________ shall have\n"
+"                                    exclusive jurisdiction to resolve any "
+"dispute which may arise in connection with\n"
+"                                    these terms.\n"
+"                                "
+msgstr ""
+
+#: .\templates\marketing\terms.html:783
+msgid ""
+"\n"
+"                                CORRECTIONS\n"
+"\n"
+"                            "
+msgstr ""
+
+#: .\templates\marketing\terms.html:791
+msgid ""
+"\n"
+"                                    There may be information on the Site "
+"that contains typographical errors,\n"
+"                                    inaccuracies, or omissions that may "
+"relate to the Marketplace Offerings, including\n"
+"                                    descriptions, pricing, availability, and "
+"various other information. We reserve the\n"
+"                                    right to correct any errors, "
+"inaccuracies, or omissions and to change or update the\n"
+"                                    information on the Site at any time, "
+"without prior notice.\n"
+"                                "
+msgstr ""
+
+#: .\templates\marketing\terms.html:803
+msgid ""
+"\n"
+"                                DISCLAIMER\n"
+"                            "
+msgstr ""
+
+#: .\templates\marketing\terms.html:810
+msgid ""
+"\n"
+"                                    THE SITE IS PROVIDED ON AN AS-IS AND AS-"
+"AVAILABLE BASIS. YOU AGREE THAT YOUR USE OF\n"
+"                                    THE SITE SERVICES WILL BE AT YOUR SOLE "
+"RISK. TO THE FULLEST EXTENT PERMITTED BY LAW,\n"
+"                                    WE DISCLAIM ALL WARRANTIES, EXPRESS OR "
+"IMPLIED, IN CONNECTION WITH THE SITE AND YOUR\n"
+"                                    USE THEREOF, INCLUDING, WITHOUT "
+"LIMITATION, THE IMPLIED WARRANTIES OF\n"
+"                                    MERCHANTABILITY, FITNESS FOR A "
+"PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE MAKE NO\n"
+"                                    WARRANTIES OR REPRESENTATIONS ABOUT THE "
+"ACCURACY OR COMPLETENESS OF THE SITE’S\n"
+"                                    CONTENT OR THE CONTENT OF ANY WEBSITES "
+"LINKED TO THIS SITE AND WE WILL ASSUME NO\n"
+"                                    LIABILITY OR RESPONSIBILITY FOR ANY (1) "
+"ERRORS, MISTAKES, OR INACCURACIES OF CONTENT\n"
+"                                    AND MATERIALS, (2) PERSONAL INJURY OR "
+"PROPERTY DAMAGE, OF ANY NATURE WHATSOEVER,\n"
+"                                    RESULTING FROM YOUR ACCESS TO AND USE OF "
+"THE SITE, (3) ANY UNAUTHORIZED ACCESS TO OR\n"
+"                                    USE OF OUR SECURE SERVERS AND/OR ANY AND "
+"ALL PERSONAL INFORMATION AND/OR FINANCIAL\n"
+"                                    INFORMATION STORED THEREIN, (4) ANY "
+"INTERRUPTION OR CESSATION OF TRANSMISSION TO OR\n"
+"                                    FROM THE SITE, (5) ANY BUGS, VIRUSES, "
+"TROJAN HORSES, OR THE LIKE WHICH MAY BE\n"
+"                                    TRANSMITTED TO OR THROUGH THE SITE BY "
+"ANY THIRD PARTY, AND/OR (6) ANY ERRORS OR\n"
+"                                    OMISSIONS IN ANY CONTENT AND MATERIALS "
+"OR FOR ANY LOSS OR DAMAGE OF ANY KIND\n"
+"                                    INCURRED AS A RESULT OF THE USE OF ANY "
+"CONTENT POSTED, TRANSMITTED, OR OTHERWISE\n"
+"                                    MADE AVAILABLE VIA THE SITE. WE DO NOT "
+"WARRANT, ENDORSE, GUARANTEE, OR ASSUME\n"
+"                                    RESPONSIBILITY FOR ANY PRODUCT OR "
+"SERVICE ADVERTISED OR OFFERED BY A THIRD PARTY\n"
+"                                    THROUGH THE SITE, ANY HYPERLINKED "
+"WEBSITE, OR ANY WEBSITE OR MOBILE APPLICATION\n"
+"                                    FEATURED IN ANY BANNER OR OTHER "
+"ADVERTISING, AND WE WILL NOT BE A PARTY TO OR IN ANY\n"
+"                                    WAY BE RESPONSIBLE FOR MONITORING ANY "
+"TRANSACTION BETWEEN YOU AND ANY THIRD-PARTY\n"
+"                                    PROVIDERS OF PRODUCTS OR SERVICES. AS "
+"WITH THE PURCHASE OF A PRODUCT OR SERVICE\n"
+"                                    THROUGH ANY MEDIUM OR IN ANY "
+"ENVIRONMENT, YOU SHOULD USE YOUR BEST JUDGMENT AND\n"
+"                                    EXERCISE CAUTION WHERE APPROPRIATE.\n"
+"                                "
+msgstr ""
+
+#: .\templates\marketing\terms.html:841
+msgid ""
+"\n"
+"                                LIMITATIONS OF LIABILITY\n"
+"                            "
+msgstr ""
+
+#: .\templates\marketing\terms.html:848
+msgid ""
+"\n"
+"                                    IN NO EVENT WILL WE OR OUR DIRECTORS, "
+"EMPLOYEES, OR AGENTS BE LIABLE TO YOU OR ANY\n"
+"                                    THIRD PARTY FOR ANY DIRECT, INDIRECT, "
+"CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, SPECIAL,\n"
+"                                    OR PUNITIVE DAMAGES, INCLUDING LOST "
+"PROFIT, LOST REVENUE, LOSS OF DATA, OR OTHER\n"
+"                                    DAMAGES ARISING FROM YOUR USE OF THE "
+"SITE, EVEN IF WE HAVE BEEN ADVISED OF THE\n"
+"                                    POSSIBILITY OF SUCH DAMAGES. "
+"NOTWITHSTANDING ANYTHING TO THE CONTRARY CONTAINED\n"
+"                                    HEREIN, OUR LIABILITY TO YOU FOR ANY "
+"CAUSE WHATSOEVER AND REGARDLESS OF THE FORM OF\n"
+"                                    THE ACTION, WILL AT ALL TIMES BE LIMITED "
+"TO THE LESSER OF THE AMOUNT PAID, IF ANY,\n"
+"                                    BY YOU TO US OR __________. CERTAIN US "
+"STATE LAWS AND INTERNATIONAL LAWS DO NOT\n"
+"                                    ALLOW LIMITATIONS ON IMPLIED WARRANTIES "
+"OR THE EXCLUSION OR LIMITATION OF CERTAIN\n"
+"                                    DAMAGES. IF THESE LAWS APPLY TO YOU, "
+"SOME OR ALL OF THE ABOVE DISCLAIMERS OR\n"
+"                                    LIMITATIONS MAY NOT APPLY TO YOU, AND "
+"YOU MAY HAVE ADDITIONAL RIGHTS.\n"
+"                                "
+msgstr ""
+
+#: .\templates\marketing\terms.html:866
+msgid ""
+"\n"
+"                                INDEMNIFICATION\n"
+"                            "
+msgstr ""
+
+#: .\templates\marketing\terms.html:873
+msgid ""
+"\n"
+"                                    You agree to defend, indemnify, and hold "
+"us harmless, including our subsidiaries,\n"
+"                                    affiliates, and all of our respective "
+"officers, agents, partners, and employees,\n"
+"                                    from and against any loss, damage, "
+"liability, claim, or demand, including reasonable\n"
+"                                    attorneys’ fees and expenses, made by "
+"any third party due to or arising out of: (1)\n"
+"                                    use of the Site; (2) breach of these "
+"Terms of Use; (3) any breach of your\n"
+"                                    representations and warranties set forth "
+"in these Terms of Use; (4) your violation\n"
+"                                    of the rights of a third party, "
+"including but not limited to intellectual property\n"
+"                                    rights; or (5) any overt harmful act "
+"toward any other user of the Site with whom you\n"
+"                                    connected via the Site. Notwithstanding "
+"the foregoing, we reserve the right, at your\n"
+"                                    expense, to assume the exclusive defense "
+"and control of any matter for which you are\n"
+"                                    required to indemnify us, and you agree "
+"to cooperate, at your expense, with our\n"
+"                                    defense of such claims. We will use "
+"reasonable efforts to notify you of any such\n"
+"                                    claim, action, or proceeding which is "
+"subject to this indemnification upon becoming\n"
+"                                    aware of it.\n"
+"                                "
+msgstr ""
+
+#: .\templates\marketing\terms.html:894
+msgid ""
+"\n"
+"                                USER DATA\n"
+"                            "
+msgstr ""
+
+#: .\templates\marketing\terms.html:901
+msgid ""
+"\n"
+"                                    We will maintain certain data that you "
+"transmit to the Site for the purpose of\n"
+"                                    managing the performance of the Site, as "
+"well as data relating to your use of the\n"
+"                                    Site. Although we perform regular "
+"routine backups of data, you are solely\n"
+"                                    responsible for all data that you "
+"transmit or that relates to any activity you have\n"
+"                                    undertaken using the Site. You agree "
+"that we shall have no liability to you for any\n"
+"                                    loss or corruption of any such data, and "
+"you hereby waive any right of action\n"
+"                                    against us arising from any such loss or "
+"corruption of such data.\n"
+"                                "
+msgstr ""
+
+#: .\templates\marketing\terms.html:915
+msgid ""
+"\n"
+"                                MISCELLANEOUS\n"
+"                            "
+msgstr ""
+
+#: .\templates\marketing\terms.html:922
+msgid ""
+"\n"
+"                                    These Terms of Use and any policies or "
+"operating rules posted by us on the Site or\n"
+"                                    in respect to the Site constitute the "
+"entire agreement and understanding between you\n"
+"                                    and us. Our failure to exercise or "
+"enforce any right or provision of these Terms of\n"
+"                                    Use shall not operate as a waiver of "
+"such right or provision. These Terms of Use\n"
+"                                    operate to the fullest extent "
+"permissible by law. We may assign any or all of our\n"
+"                                    rights and obligations to others at any "
+"time. We shall not be responsible or liable\n"
+"                                    for any loss, damage, delay, or failure "
+"to act caused by any cause beyond our\n"
+"                                    reasonable control. If any provision or "
+"part of a provision of these Terms of Use is\n"
+"                                    determined to be unlawful, void, or "
+"unenforceable, that provision or part of the\n"
+"                                    provision is deemed severable from these "
+"Terms of Use and does not affect the\n"
+"                                    validity and enforceability of any "
+"remaining provisions. There is no joint venture,\n"
+"                                    partnership, employment or agency "
+"relationship created between you and us as a\n"
+"                                    result of these Terms of Use or use of "
+"the Site. You agree that these Terms of Use\n"
+"                                    will not be construed against us by "
+"virtue of having drafted them. You hereby waive\n"
+"                                    any and all defenses you may have based "
+"on the electronic form of these Terms of Use\n"
+"                                    and the lack of signing by the parties "
+"hereto to execute these Terms of Use.\n"
+"                                "
+msgstr ""
+
+#: .\templates\marketing\terms.html:945
+msgid ""
+"\n"
+"                                CONTACT US\n"
+"                            "
+msgstr ""
+"\n"
+"CONTACTEZ-NOUS"
+
+#: .\templates\marketing\terms.html:952
+msgid ""
+"\n"
+"                                    In order to resolve a complaint "
+"regarding the Site or to receive further information\n"
+"                                    regarding use of the Site, please "
+"contact us at:\n"
+"                                "
+msgstr ""
+"\n"
+"Afin de résoudre une plainte concernant le Site ou de recevoir des "
+"informations supplémentaires concernant l'utilisation du site, veuillez nous "
+"contacter à l'adresse suivante :"
+
+#: .\templates\marketing\trust.html:34
+msgid " Trust Us "
+msgstr "Nous faire confiance"
+
+#: .\templates\marketing\trust.html:37
+msgid " Here you can follow our work in real time and make checks. "
+msgstr ""
+"Vous pouvez y suivre notre travail en temps réel et effectuer des contrôles."
+
+#: .\templates\marketing\trust.html:43
+msgid ""
+"\n"
+"                            We will publish here the correct scores for some "
+"matches. But they will be encrypted. The\n"
+"                            info is published before the match. You save the "
+"text, but you can't see the result.\n"
+"                            After the match is finished, we will add here "
+"the secret key to decrypt and check the\n"
+"                            correct score. It is free and non-profitable. "
+"Brilliant.\n"
+"                        "
+msgstr ""
+"\n"
+"Nous publierons ici les scores corrects de certains matchs. Mais ils seront "
+"cryptés. L'information est publiée avant le match. Vous enregistrez le "
+"texte, mais vous ne pouvez pas voir le résultat.\n"
+"Une fois le match terminé, nous ajouterons ici la clé secrète pour décrypter "
+"et vérifier le score correct. C'est gratuit et sans but lucratif. Brillant."
+
+#: .\templates\marketing\trust.html:49
+msgid " We use The  "
+msgstr "Nous utilisons le"
+
+#: .\templates\marketing\trust.html:50
+msgid " Decryptor "
+msgstr "Décrypteur"
+
+#: .\templates\marketing\trust.html:52
+msgid ""
+"\n"
+"                        We publish only Wednesdays matches. There are last "
+"~25 matches (all by Wednesdays). So please\n"
+"                        don't ask us why we don't publish every match here\n"
+"                    "
+msgstr ""
+"\n"
+"Nous ne publions que les matchs du mercredi. Il y a ~25 derniers matchs "
+"(tous du mercredi). Donc, s'il vous plaît ne nous demandez pas pourquoi nous "
+"ne publions pas tous les matchs ici."
+
+#: .\templates\marketing\trust.html:66
+msgid "Current Matches"
+msgstr "Matchs actuels"
+
+#: .\templates\marketing\trust.html:71
+msgid " This is the correct score for "
+msgstr "C'est le score correct pour"
+
+#: .\templates\marketing\trust.html:73
+msgid "It is encrypted. Please save this text: "
+msgstr "Il est crypté. Veuillez sauvegarder ce texte"
+
+#: .\templates\marketing\trust.html:79 .\templates\marketing\trust.html:99
+msgid " The Secret key for "
+msgstr "La clé secrète pour"
+
+#: .\templates\marketing\trust.html:81
+msgid "We will add the secret key here after the match."
+msgstr "Nous ajouterons la clé secrète ici après le match."
+
+#: .\templates\marketing\trust.html:88
+msgid " Previous Matches "
+msgstr "Matches précédents"
+
+#: .\templates\marketing\trust.html:94
+msgid " Encrypted correct score for "
+msgstr "Score correct crypté pour"
+
+#: .\templates\marketing\trust.html:103
+msgid " Copy the Secret key "
+msgstr "Copiez la clé secrète"
+
+#: .\templates\marketing\trust.html:104
+msgid " Go to The "
+msgstr "Aller à la"
+
+#: .\templates\marketing\trust.html:106
+msgid " and decrypt the correct score "
+msgstr "et décrypter le score correct"

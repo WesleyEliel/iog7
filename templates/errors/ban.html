@@ -1,0 +1,153 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Banned!</title>
+</head>
+<style>
+    .box{
+        margin-top: 200px;
+        color:red;
+    }
+</style>
+<body>
+
+<center>
+<h1 class="box">You are permanently banned by admin</h1>
+    <hr>
+<b><mark>Rule violation</mark></b>
+</center>
+
+</body>
+</html>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#fff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+                                 maximum-scale=1.0, user-scalable=no">
+    <title>iog.com</title>
+    <style>
+
+        .icon {
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        button {
+            border: 0;
+            border-radius: 4px;
+            box-sizing: border-box;
+            color: #fff;
+            cursor: pointer;
+            float: right;
+            font-size: .875em;
+            margin: 0;
+            padding: 8px 16px;
+            transition: box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1);
+            user-select: none;
+        }
+
+        .neterror button {
+            background: rgb(25, 103, 210);
+            outline: 0;
+        }
+
+        #details {
+            margin: 0 0 50px;
+        }
+
+        #details p:not(:first-of-type) {
+            margin-top: 20px;
+        }
+
+
+        h1 {
+            font-size: 1.6em;
+            font-weight: 600;
+            line-height: 1.25em;
+            margin-bottom: 16px;
+        }
+
+        h2 {
+            font-size: 1.2em;
+            font-weight: normal;
+        }
+
+        .icon {
+            height: 72px;
+            margin: 0 0 40px;
+            width: 72px;
+        }
+
+        .icon-generic {
+            content: -webkit-image-set(url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABIAQMAAABvIyEEAAAABlBMVEUAAABTU1OoaSf/AAAAAXRSTlMAQObYZgAAAENJREFUeF7tzbEJACEQRNGBLeAasBCza2lLEGx0CxFGG9hBMDDxRy/72O9FMnIFapGylsu1fgoBdkXfUHLrQgdfrlJN1BdYBjQQm3UAAAAASUVORK5CYII=) 1x, url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJAAAACQAQMAAADdiHD7AAAABlBMVEUAAABTU1OoaSf/AAAAAXRSTlMAQObYZgAAAFJJREFUeF7t0cENgDAMQ9FwYgxG6WjpaIzCCAxQxVggFuDiCvlLOeRdHR9yzjncHVoq3npu+wQUrUuJHylSTmBaespJyJQoObUeyxDQb3bEm5Au81c0pSCD8HYAAAAASUVORK5CYII=) 2x);
+        }
+
+        .interstitial-wrapper {
+            box-sizing: border-box;
+            font-size: 1em;
+            line-height: 1.6em;
+            margin: 14vh auto 0;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .nav-wrapper {
+            margin-top: 51px;
+        }
+
+        .nav-wrapper::after {
+            clear: both;
+            content: '';
+            display: table;
+            width: 100%;
+        }
+
+    </style>
+<body>
+
+<body id="t" class="neterror" style="font-family: 'Segoe UI', Tahoma, sans-serif; font-size: 100%">
+<div id="main-frame-error" class="interstitial-wrapper">
+    <div id="main-content" jstcache="0">
+        <div class="icon icon-generic"></div>
+        <div id="main-message">
+            <h1>
+                <span>Ce site est inaccessible</span>
+            </h1>
+            <p>Vérifiez si l'adresse <span>idg.com</span> est correcte.</p>
+            <!--The suggestion list and error code are normally presented inline,
+              in which case error-information-popup-* divs have no effect. When
+              error-information-popup-container has the use-popup-container class, this
+              information is provided in a popup instead.-->
+            <div id="error-information-popup-container">
+                <div id="error-information-popup">
+                    <div id="error-information-popup-box">
+                        <div id="error-information-popup-content">
+                            <div id="suggestions-list">
+                                <ul class="single-suggestion">
+                                    <li>S'il n'y a pas d'erreur, essayez de <a style="color: rgb(26, 115, 232);" href="#" id="diagnose-link">faire un
+                                        diagnostic réseau Windows</a>.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="error-code" jscontent="errorCode" jstcache="17">DNS_PROBE_FINISHED_NXDOMAIN
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="buttons" class="nav-wrapper suggested-left">
+        <div id="control-buttons" style="text-align: left;">
+            <button id="reload-button" class="blue-button text-button" onclick="location.href = '/'">Actualiser</button>
+        </div>
+    </div>
+</div>
+</body>

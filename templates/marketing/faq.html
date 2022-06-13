@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block stylesheets %}
+
+{% endblock %}
+{% block hero %}
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-10">
+                <div class="contents text-center">
+                    <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">Mate - Free Parallax
+                        Website Template</h1>
+                    <p class="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. </p>
+                    <a href="#" class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Download</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock hero %}
+
+
+
+{% block content %}
+
+
+
+    <!-- Start About Us Section -->
+    <section id="about-faq" class="section faq">
+        <div class="container mt-5">
+            <div class="section-header">
+                <h2 class="section-title">FAQ</h2>
+                <hr class="lines">
+                <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat,
+                    dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p>
+            </div>
+            <div class="row mt-3">
+
+                <div class="col-12 accordionFAQ">
+                    <div class="panel-group" id="accordionFourLeft">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion_oneLeft"
+                                                           href="#collapseFiveLeftone" aria-expanded="false"
+                                                           class="collapsed"> Why Font Awesome used </a></h4>
+                            </div>
+                            <div id="collapseFiveLeftone" class="panel-collapse collapse" aria-expanded="false"
+                                 role="tablist" style="height: 0px;">
+                                <div class="panel-body">
+                                    <div class="img-accordion"><img
+                                            src="https://img.icons8.com/color/81/000000/person-female.png" alt=""></div>
+                                    <div class="text-accordion">
+                                        <p> Why Font Awesome usedWhy Font Awesome usedWhy Font Awesome usedWhy Font
+                                            Awesome usedWhy Font Awesome usedWhy Font Awesome usedWhy Font Awesome
+                                            usedWhy Font Awesome usedWhy Font Awesome usedWhy Font Awesome usedWhy Font
+                                            Awesome usedWhy Font Awesome usedWhy Font Awesome used </p>
+                                    </div>
+                                </div> <!-- end of panel-body -->
+                            </div>
+                        </div> <!-- /.panel-default -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><a class="collapsed" data-toggle="collapse"
+                                                           data-parent="#accordion_oneLeft" href="#collapseFiveLeftTwo"
+                                                           aria-expanded="false"> Why Font Awesome used and its
+                                    benefits </a></h4>
+                            </div>
+                            <div id="collapseFiveLeftTwo" class="panel-collapse collapse" aria-expanded="false"
+                                 role="tablist" style="height: 0px;">
+                                <div class="panel-body">
+                                    <div class="img-accordion"><img
+                                            src="https://img.icons8.com/color/81/000000/person-female.png" alt=""></div>
+                                    <div class="text-accordion">
+                                        <p> Why Font Awesome usedWhy Font Awesome usedWhy Font Awesome usedWhy Font
+                                            Awesome usedWhy Font Awesome usedWhy Font Awesome usedWhy Font Awesome
+                                            usedWhy Font Awesome usedWhy Font Awesome used </p>
+                                    </div>
+                                </div> <!-- end of panel-body -->
+                            </div>
+                        </div> <!-- /.panel-default -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><a class="collapsed" data-toggle="collapse"
+                                                           data-parent="#accordion_oneLeft"
+                                                           href="#collapseFiveLeftThree" aria-expanded="false"> Why Font
+                                    Awesome used for its own </a></h4>
+                            </div>
+                            <div id="collapseFiveLeftThree" class="panel-collapse collapse" aria-expanded="false"
+                                 role="tablist">
+                                <div class="panel-body">
+                                    <div class="img-accordion"><img
+                                            src="https://img.icons8.com/color/81/000000/person-female.png" alt=""></div>
+                                    <div class="text-accordion">
+                                        <p> Why Font Awesome used for its own Why Font Awesome used for its own Why Font
+                                            Awesome used for its own Why Font Awesome used for its own Why Font Awesome
+                                            used for its own Why Font Awesome used for its own Why Font Awesome used for
+                                            its own </p>
+                                    </div>
+                                </div> <!-- end of panel-body -->
+                            </div>
+                        </div> <!-- /.panel-default -->
+                    </div>
+                    <!--end of /.panel-group-->
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End About Us Section -->
+
+
+{% endblock content %}
+
+
+
+{% block scripts %}{% endblock %}

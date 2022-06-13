@@ -1,0 +1,197 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+
+
+{% block stylesheets %}
+    <style>
+        a:hover:not(.nav-link) {
+            color: #0B7CFF;
+            text-decoration: underline !important;
+        }
+    </style>
+{% endblock %}
+
+
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block hero %}
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-10">
+
+            </div>
+        </div>
+    </div>
+{% endblock hero %}
+
+
+
+{% block content %}
+
+
+    <!-- Start About Us Section -->
+    <section id="about-us" class="section about-us">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"> {% blocktrans %} Trust Us {% endblocktrans %} </h2>
+                <hr class="lines">
+                <p class="section-subtitle">
+                    {% blocktrans %} Here you can follow our work in real time and make checks. {% endblocktrans %}
+                </p>
+            </div>
+            <div class="row my-3 justify-content-center">
+                <div class="col-10 mt-4">
+                    <p>
+                        {% blocktrans %}
+                            We will publish here the correct scores for some matches. But they will be encrypted. The
+                            info is published before the match. You save the text, but you can't see the result.
+                            After the match is finished, we will add here the secret key to decrypt and check the
+                            correct score. It is free and non-profitable. Brilliant.
+                        {% endblocktrans %}
+                    {% blocktrans %} We use The  {% endblocktrans %}
+                        <a href="https://thedecryptor.com/" target="_blank"> {% blocktrans %} Decryptor {% endblocktrans %} </a>. <br> The link: <a
+                            href="https://thedecryptor.com/" target="_blank">thedecryptor.com</a>. <br><br>
+                    {% blocktrans %}
+                        We publish only Wednesdays matches. There are last ~25 matches (all by Wednesdays). So please
+                        don't ask us why we don't publish every match here
+                    {% endblocktrans %}
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="row my-3 justify-content-center trust-us-area">
+                <div class="col-10 mt-4">
+                    <div class="row">
+                        <div class="col-12 trust-us-tables-wrapper">
+                            <div class="row col trust-us-tables-title-wrapper mb-4 text-center">
+                                <h5 class="text-center trust-us-tables-title">{% blocktrans %}Current Matches{% endblocktrans %}</h5>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 mt-5">
+                                    <p><span class="trust-us-table-date">
+                                        {% if LANGUAGE_CODE == 'en' %}
+                                        {{ current_encrypted_match.date|date:"M d, Y" }} Match
+                                        {% elif LANGUAGE_CODE == 'it' %}
+                                        {% elif LANGUAGE_CODE == 'es' %}
+                                        {% elif LANGUAGE_CODE == 'zh' %}
+                                        {% elif LANGUAGE_CODE == 'fr' %}
+                                            Match du {{ current_encrypted_match.date|date:"d M Y" }}
+                                        {% elif LANGUAGE_CODE == 'ru' %}
+                                        {% elif LANGUAGE_CODE == 'de' %}
+                                        {% elif LANGUAGE_CODE == 'ar' %}
+                                        {% endif %}
+                                    </span><br>
+                                        {% blocktrans %} This is the correct score for {% endblocktrans %}
+                                    {% if LANGUAGE_CODE == 'en' %}
+                                        the {{ current_encrypted_match.date|date:"M d, Y" }} Match.
+                                        {% elif LANGUAGE_CODE == 'it' %}
+                                        {% elif LANGUAGE_CODE == 'es' %}
+                                        {% elif LANGUAGE_CODE == 'zh' %}
+                                        {% elif LANGUAGE_CODE == 'fr' %}
+
+                                        match du {{ current_encrypted_match.date|date:"d M  Y" }}.
+                                        {% elif LANGUAGE_CODE == 'ru' %}
+                                        {% elif LANGUAGE_CODE == 'de' %}
+                                        {% elif LANGUAGE_CODE == 'ar' %}
+                                        {% endif %}
+                                        {% blocktrans %}It is encrypted. Please save this text: {% endblocktrans %}
+                                    </p>
+                                    <p style="word-wrap: break-word;">
+                                        {{ current_encrypted_match.encrypted_text }}
+                                    </p>
+                                    <p><span
+                                            class=""> {% blocktrans %} The Secret key for {% endblocktrans %} {{ current_encrypted_match.date|date:"M d, Y" }} match:</span>
+                                    </p>
+                                    <p class="font-weight-bold"> {% blocktrans %}We will add the secret key here after the match.{% endblocktrans %}</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 mt-5 trust-us-tables-wrapper">
+                            <div class="row col bg-dark mb-4 text-center">
+                                <h5 class="text-white text-center trust-us-tables-title"> {% blocktrans %} Previous Matches {% endblocktrans %}</h5>
+                            </div>
+                            <div class="row">
+                                {% for encrypted_match in previous_encrypted_matches %}
+                                    <div class="col-12 mt-4 trust-us-table-wrapper">
+                                        <p><span class="trust-us-table-date">
+                                            {% if LANGUAGE_CODE == 'en' %}
+                                        {{ encrypted_match.date|date:"M d, Y" }}.
+                                        {% elif LANGUAGE_CODE == 'it' %}
+                                        {% elif LANGUAGE_CODE == 'es' %}
+                                        {% elif LANGUAGE_CODE == 'zh' %}
+                                        {% elif LANGUAGE_CODE == 'fr' %}
+
+                                        {{ encrypted_match.date|date:"d M  Y" }}.
+                                        {% elif LANGUAGE_CODE == 'ru' %}
+                                        {% elif LANGUAGE_CODE == 'de' %}
+                                        {% elif LANGUAGE_CODE == 'ar' %}
+                                        {% endif %}
+                                        </span><br>
+                                            {% blocktrans %} Encrypted correct score for {% endblocktrans %}
+
+                                         {% if LANGUAGE_CODE == 'en' %}
+                                         the {{ encrypted_match.date|date:"M d, Y" }} match:
+                                        {% elif LANGUAGE_CODE == 'it' %}
+                                        {% elif LANGUAGE_CODE == 'es' %}
+                                        {% elif LANGUAGE_CODE == 'zh' %}
+                                        {% elif LANGUAGE_CODE == 'fr' %}
+
+                                         le match du {{ encrypted_match.date|date:"d M  Y" }}.
+                                        {% elif LANGUAGE_CODE == 'ru' %}
+                                        {% elif LANGUAGE_CODE == 'de' %}
+                                        {% elif LANGUAGE_CODE == 'ar' %}
+                                        {% endif %}
+
+                                        </p>
+                                        <p style="word-wrap: break-word;">
+                                            {{ encrypted_match.encrypted_text }}
+                                        </p>
+                                        <p><span
+                                                class="trust-us-table-secret">{% blocktrans %} The Secret key for {% endblocktrans %}
+
+                                         {% if LANGUAGE_CODE == 'en' %}
+                                         the {{ encrypted_match.date|date:"M d, Y" }} match:
+                                        {% elif LANGUAGE_CODE == 'it' %}
+                                        {% elif LANGUAGE_CODE == 'es' %}
+                                        {% elif LANGUAGE_CODE == 'zh' %}
+                                        {% elif LANGUAGE_CODE == 'fr' %}
+
+                                         le match du {{ encrypted_match.date|date:"d M  Y" }}.
+                                        {% elif LANGUAGE_CODE == 'ru' %}
+                                        {% elif LANGUAGE_CODE == 'de' %}
+                                        {% elif LANGUAGE_CODE == 'ar' %}
+                                        {% endif %}
+
+                                        </span>
+                                        </p>
+                                        <p class="font-weight-bold text-danger">{{ encrypted_match.key }}</p>
+                                        <p>
+                                            <li>{% blocktrans %} Copy the Secret key {% endblocktrans %}: {{ encrypted_match.key }}</li>
+                                            <li> {% blocktrans %} Go to The {% endblocktrans %} <a target="_blank"
+                                                              href="https://thedecryptor.com/decryptor.php">Decryptor</a>
+                                                {% blocktrans %} and decrypt the correct score {% endblocktrans %}
+                                            </li>
+                                        </p>
+                                        <hr style="height: 2px; background: black; margin-bottom: 20px; margin-top: 30px;">
+                                    </div>
+
+                                {% endfor %}
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Us Section -->
+
+{% endblock content %}
+
+
+
+{% block scripts %}{% endblock %}

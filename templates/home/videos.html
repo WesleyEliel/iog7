@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block stylesheets %}
+
+{% endblock %}
+{% block hero %}
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-10">
+                <div class="contents text-center">
+                    <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">Mate - Free Parallax
+                        Website Template</h1>
+                    <p class="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. </p>
+                    <a href="#" class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Download</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock hero %}
+
+
+
+{% block content %}
+
+
+    <!-- Team section Start -->
+    <section id="team" class="section">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <a href="{% get_media_prefix %}videos/video1.mp4" class="video-popup wow fadeInUp"
+                       data-wow-duration="1000ms" data-wow-delay="0.3s">
+                        <div class="single-team">
+                            <img src="{% static 'img/team/team1.jpg' %}" alt="">
+                            <i class="lnr lnr-film-play"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team section End -->
+
+
+
+{% endblock content %}
+
+
+
+{% block scripts %}{% endblock %}

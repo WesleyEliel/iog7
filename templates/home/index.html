@@ -1,0 +1,653 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block stylesheets %}
+    <style>
+
+        .table-wrap {
+            overflow-x: scroll;
+        }
+
+        .table {
+            min-width: 1000px !important;
+            width: 100%;
+            -webkit-box-shadow: 0px 5px 12px -12px rgba(0, 0, 0, 0.29);
+            -moz-box-shadow: 0px 5px 12px -12px rgba(0, 0, 0, 0.29);
+            box-shadow: 0px 5px 12px -12px rgba(0, 0, 0, 0.29);
+        }
+
+        .table thead th {
+            text-align: center;
+            border: none;
+            padding: 30px;
+            font-size: 16px;
+            color: #000;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+        .table thead tr {
+            background: #fff;
+        }
+
+        .table tbody tr {
+            background: #fff;
+        }
+
+        .table tbody th, .table tbody td {
+            border: none;
+            padding: 20px 30px;
+            font-size: 14px;
+            vertical-align: middle;
+        }
+
+        .table tbody td .close span {
+            font-size: 12px;
+            color: #dc3545;
+        }
+
+    </style>
+
+{% endblock %}
+{% block hero %}
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-12">
+                <div class="contents text-center">
+                    <!--<h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">Hello.</h1>-->
+                    <!--<p class="lead wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">Let make money togheter. </p>-->
+                    <!--<a href="#" class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Démarrer</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock hero %}
+
+
+
+{% block content %}
+
+
+
+
+    <!-- About Us Section Start -->
+    <section id="about-us" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">
+                    {% blocktrans %}About Us{% endblocktrans %}</h2>
+                <hr class="lines wow zoomIn" data-wow-delay="0.3s">
+                <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">
+                    {% blocktrans %}
+                        An idea about what we do.
+                    {% endblocktrans %}
+                </p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <p class="text-center">
+                        {% blocktrans %}
+                            We provide fixed football matches to let you start profitable betting. We have a partnership
+                            with a big insider, and we redirect you to his services. The info is 100% correct. We are
+                            here to mediate to him.
+                        {% endblocktrans %}
+                        <br>
+                        {% blocktrans %}
+                            We know that you shouldn't and mustn't believe us. And, actually, we can't do much for your
+                            trust. We don't give free matches. The main reason: we have enough clients who buy our
+                            matches in subscriptions and get them automatically.
+                        {% endblocktrans %}
+
+                    </p></div>
+            </div>
+        </div>
+    </section>
+    <!-- About Us Section End -->
+
+
+    <!-- Services Section Start -->
+    <section id="services" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">
+                    {% blocktrans %}Our Services{% endblocktrans %} </h2>
+                <hr class="lines wow zoomIn" data-wow-delay="0.3s">
+                <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">
+                    {% blocktrans %}
+                    Here is the whole process.
+                    {% endblocktrans %}</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <div class="row justify-content-around">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="item-boxes wow fadeInDown" data-wow-delay="0.2s">
+                                <div class="icon">
+                                    <i class="lnr lnr-pencil"></i>
+                                </div>
+                                <h4>{% blocktrans %}Access Matches{% endblocktrans %}</h4>
+                                <p>{% blocktrans %}We access the list of available matches from our
+                                    partner.{% endblocktrans %}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="item-boxes wow fadeInDown" data-wow-delay="1.2s">
+                                <div class="icon">
+                                    <i class="lnr lnr-mustache"></i>
+                                </div>
+                                <h4>{% blocktrans %}Give you access{% endblocktrans %}</h4>
+                                <p>{% blocktrans %}We give you access to information through their
+                                    bot.{% endblocktrans %}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row justify-content-center mt-4 mb-5">
+                <a href="{% url 'home' %}#faq" class="btn btn-common wow fadeInUp animated" data-wow-duration="1000ms"
+                   data-wow-delai="500ms">{% blocktrans %}More About Us{% endblocktrans %}</a>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+
+    <!-- Start Call Action Area -->
+    <section id="order" class="call-action section">
+        <div class="container">
+            <div class="inner-content">
+                <div class="row justify-content-around align-items-center">
+                    <div class="col-lg-6 col-md-7 col-9">
+                        <div class="text">
+                            <h2> {% blocktrans %}Order your Pack{% endblocktrans %}.
+                            </h2>
+                            <p style="display: block; font-size: 16px; margin-top: 15px;">
+                                {% blocktrans %}We can be reached here:{% endblocktrans %} </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-5 col-12">
+                        <div class="row">
+                            <div class="text-left">
+                                <p class="pt-4 text-center">
+                                    {% blocktrans %}
+                                        Please use this email address or telegram link if you want to make your order or
+                                        ask any questions
+                                    {% endblocktrans %}
+                                </p>
+                                <div class="mt-3 pt-3 text-center">
+                                    <p class="h5 text-center pt-2"><span class="font-weight-bold"> Email:</span>
+                                        idg-infos@safe.mail</p>
+                                    <a href="https://t.me/TariqFootballMoney" target="_blank" class="h5 text-left mt-5"> <span
+                                            class="font-weight-bold"> Telegram:</span> Football Money Infos</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Call Action -->
+
+    <!-- Start Next Matches Section -->
+    <div id="next-matches" class="section pricing-section">
+        <div class="container text-center">
+            <div class="section-header">
+                <h2 class="section-title">{% blocktrans %}Next Matches{% endblocktrans %}</h2>
+                <hr class="lines">
+                <p class="section-subtitle">
+                    {% blocktrans %}
+                        Here is a list of next match we are going to make money with.
+                    {% endblocktrans %}<br>
+                    {% blocktrans %}
+                        Please choose the match, pay for it, using our payment gate, to get the match immediately.
+                    {% endblocktrans %}</p>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="table-wrap">
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th>Match ID</th>
+                                <th>Date</th>
+                                <th>Odd</th>
+                                <th>Odd Type</th>
+                                <th>Price</th>
+                                <th>Action</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for next_match in next_matches %}
+
+                            <tr>
+                                <th scope="row">{{ next_match.match_id }}</th>
+                                <td>{{ next_match.date|date:"M d, Y" }}</td>
+                                <td>{{ next_match.odd }}</td>
+                                <td>{{ next_match.get_odd_type }}</td>
+                                <td>${{ next_match.price }}</td>
+                                <td>
+                                    <a href="https://t.me/TariqFootballMoney" target="_blank" class="btn btn-common">
+                                        {% blocktrans %}Buy Now{% endblocktrans %}
+                                    </a>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Next Matches Section -->
+
+    <!-- Start Pricing Table Section -->
+    <div id="pricing" class="section pricing-section">
+        <div class="container text-center">
+            <div class="section-header">
+                <h2 class="section-title">{% blocktrans %}Subscriptions{% endblocktrans %}</h2>
+                <hr class="lines">
+                <p class="section-subtitle">
+                    {% blocktrans %}You can take a pack of match to maximize profit! {% endblocktrans %}<br>
+                    {% blocktrans %} Here is the available plans.{% endblocktrans %} </p>
+            </div>
+
+            <div class="row pricing-tables justify-content-center">
+
+                {% for plan in light_pricing_plans %}
+                    <div class="col-md-3 col-sm-6 col-xs-12 rounded-lg" style="border-radius: 23px!important;">
+                        <div class="pricing-table">
+                            <div class="pricing-details">
+                                <h2>{{ plan.name }}</h2>
+                                <span>${{ plan.price }}</span>
+                                <ul>
+                                    {% if plan.first_feature %}
+                                        <li>{{ plan.first_feature }}</li>
+                                    {% endif %}
+                                    {% if plan.second_feature %}
+                                        <li>{{ plan.second_feature }}</li>
+                                    {% endif %}
+                                    {% if plan.third_feature %}
+                                        <li>{{ plan.third_feature }}</li>
+                                    {% endif %}
+                                    {% if plan.fourth_feature %}
+                                        <li>{{ plan.fourth_feature }}</li>
+                                    {% endif %}
+                                </ul>
+                            </div>
+                            <div class="plan-button">
+                                <a href="https://t.me/TariqFootballMoney" target="_blank" class="btn btn-common">{% blocktrans %}Buy Now{% endblocktrans %}</a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+
+
+            </div>
+            <div class="row justify-content-center pricing-tables mt-5">
+                <div class="col-9 rounded-lg" style="border-radius: 23px!important;">
+                    <div class="pricing-table">
+                        <div class="pricing-details">
+                            <h2>{{ big_plan.name }}</h2>
+                            <span>${{ big_plan.price }}</span>
+                            <ul>
+                                {% if big_plan.first_feature %}
+                                    <li>{{ big_plan.first_feature }}</li>
+                                {% endif %}
+                                {% if big_plan.second_feature %}
+                                    <li>{{ big_plan.second_feature }}</li>
+                                {% endif %}
+                                {% if big_plan.third_feature %}
+                                    <li>{{ big_plan.third_feature }}</li>
+                                {% endif %}
+                                {% if big_plan.fourth_feature %}
+                                    <li>{{ big_plan.fourth_feature }}</li>
+                                {% endif %}
+                            </ul>
+                        </div>
+                        <div class="plan-button">
+                            <a href="t.me/idg" class="btn btn-common">{% blocktrans %}Buy Now{% endblocktrans %}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Pricing Table Section -->
+
+    <!-- Counter Section Start -->
+    <div class="counters section" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class="facts-item">
+                        <div class="icon">
+                            <i class="lnr lnr-briefcase"></i>
+                        </div>
+                        <div class="fact-count">
+                            <h3><span class="counter">{{ counter.winning_matches }}</span></h3>
+                            <h4>{% blocktrans %}Winning Matches{% endblocktrans %}</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class="facts-item">
+                        <div class="icon">
+                            <i class="lnr lnr-user"></i>
+                        </div>
+                        <div class="fact-count">
+                            <h3><span class="counter">{{ counter.no_user }}</span></h3>
+                            <h4>{% blocktrans %}No. of Clients{% endblocktrans %}</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class="facts-item">
+                        <div class="icon">
+                            <i class="lnr lnr-heart"></i>
+                        </div>
+                        <div class="fact-count">
+                            <h3><span class="counter">{{ counter.people_love }}</span></h3>
+                            <h4>{% blocktrans %}Peoples Love{% endblocktrans %}</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Counter Section End -->
+
+
+    <!-- Videos section Start -->
+    <!-- <section id="videos" class="section">
+        <div class="container-fluid">
+            <div class="section-header">
+                <h2 class="section-title">Videos</h2>
+                <hr class="lines">
+                <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat,
+                    dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p>
+            </div>
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="home-page-video-box">
+                            <video class="home-page-video" id="live-video" loop="" autoplay="" muted="">
+                                <source src="{% get_media_prefix %}videos/video1.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="home-page-video-box">
+                            <video class="home-page-video" id="live-video" loop="" autoplay="" muted="">
+                                <source src="{% get_media_prefix %}videos/video1.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="home-page-video-box">
+                            <video class="home-page-video" id="live-video" loop="" autoplay="" muted="">
+                                <source src="{% get_media_prefix %}videos/video1.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-active">
+                        <div class="video-box">
+                            <video class="home-page-video" id="live-video" loop="" autoplay="" muted="">
+                                <source src="{% get_media_prefix %}videos/video1.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video-box">
+                            <video class="home-page-video" id="live-video" loop="" autoplay="" muted="">
+                                <source src="{% get_media_prefix %}videos/video1.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="home-page-video-box">
+                            <video class="home-page-video" id="live-video" loop="" autoplay="" muted="">
+                                <source src="{% get_media_prefix %}videos/video1.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    <!-- Video section End -->
+
+
+
+    <!-- Services Section Start -->
+    <section id="faq" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">{% blocktrans %}
+                    FAQ Section{% endblocktrans %}</h2>
+                <hr class="lines wow zoomIn" data-wow-delay="0.3s">
+                <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">
+                    {% blocktrans %}Questions people often ask. Anyway, if the questions is still remain - just contact
+                        us.{% endblocktrans %}
+                </p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 mx-auto">
+                    <!-- Accordion -->
+                    <div id="accordionExample" class="accordion shadow">
+
+                        <!-- Accordion item 1 -->
+                        <div class="card">
+                            <div id="headingOne" class="card-header bg-white shadow-sm border-0">
+                                <h2 class="mb-0">
+                                    <button type="button" data-toggle="collapse" data-target="#collapseOne"
+                                            aria-expanded="true" aria-controls="collapseOne"
+                                            class="btn btn-link text-dark font-weight-bold text-uppercase collapsible-link">
+                                        {% blocktrans %}What payment ways do you accept ?{% endblocktrans %}
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample"
+                                 class="collapse show">
+                                <div class="card-body p-5">
+
+                                    <p class="font-weight-light m-0">
+                                        {% blocktrans %}
+                                            We accept crypto payments only! We don't accept Paypal, Skrill or Western
+                                            Union. You can pay via:
+                                        {% endblocktrans %}
+
+                                    <li>Bitcoin</li>
+                                    <li>Perfect Money</li>
+                                    <li>
+                                        {% blocktrans %}
+                                            Other types of payment in agreement with our support.
+                                        {% endblocktrans %}
+                                    </li>
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!-- End -->
+
+                        <!-- Accordion item 2 -->
+                        <div class="card">
+                            <div id="headingTwo" class="card-header bg-white shadow-sm border-0">
+                                <h2 class="mb-0">
+                                    <button type="button" data-toggle="collapse" data-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo"
+                                            class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">
+                                        {% blocktrans %}What do 2.5+ 5.0+ 10.0+ odds mean ?{% endblocktrans %}
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample"
+                                 class="collapse">
+                                <div class="card-body p-5">
+                                    <p class="font-weight-light m-0">
+                                        {% blocktrans %}
+                                            2.5+ means the odd is higher than 2.5, for example 2.8. If you see the odd
+                                            10.0+ that means you will get the odd more than 10.0 for example 11.0 or
+                                            14.0 etc.
+                                        {% endblocktrans %}
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!-- End -->
+
+                        <!-- Accordion item 3 -->
+                        <div class="card">
+                            <div id="headingThree" class="card-header bg-white shadow-sm border-0">
+                                <h2 class="mb-0">
+                                    <button type="button" data-toggle="collapse" data-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree"
+                                            class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">
+                                        {% blocktrans %}What does "odd type" mean?{% endblocktrans %}
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample"
+                                 class="collapse">
+                                <div class="card-body p-5">
+                                    <p class="font-weight-light m-0">
+                                        {% blocktrans %}
+                                            You can bet on different match options, which do have different odds:
+                                        {% endblocktrans %}
+
+
+                                    <li>
+                                        {% blocktrans %}
+                                            Odd type "full time" means you will get the result of the match (1 or 2 team
+                                            wins or draw) with no correct score
+                                        {% endblocktrans %}
+                                    </li>
+                                    <li>
+                                        {% blocktrans %}
+                                            Odd type "correct score" mean you will get the correct score of the match (1
+                                            team wins 2:1)
+                                        {% endblocktrans %}
+                                    </li>
+                                    <li>
+                                        {% blocktrans %}
+                                            Odd type "ft/ht" means you will get the results of the first and the second
+                                            halftimes.
+                                        {% endblocktrans %}
+                                    </li>
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!-- End -->
+
+                        <!-- Accordion item 4 -->
+                        <div class="card">
+                            <div id="headingFour" class="card-header bg-white shadow-sm border-0">
+                                <h2 class="mb-0">
+                                    <button type="button" data-toggle="collapse" data-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour"
+                                            class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">
+                                        {% blocktrans %}Where can I bet?{% endblocktrans %}
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFour" aria-labelledby="headingFour" data-parent="#accordionExample"
+                                 class="collapse">
+                                <div class="card-body p-5">
+                                    <p class="font-weight-light m-0">
+                                        {% blocktrans %}
+                                            Almost all online sportbooks provide our matches. Also you can bet in
+                                            offline bookies.
+                                        {% endblocktrans %}
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!-- End -->
+
+
+                        <!-- Accordion item 5 -->
+                        <div class="card">
+                            <div id="headingFive" class="card-header bg-white shadow-sm border-0">
+                                <h2 class="mb-0">
+                                    <button type="button" data-toggle="collapse" data-target="#collapseFive"
+                                            aria-expanded="false" aria-controls="collapseFive"
+                                            class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">
+
+                                        {% blocktrans %} Where can I get Bitcoin?{% endblocktrans %}
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFive" aria-labelledby="headingFive" data-parent="#accordionExample"
+                                 class="collapse">
+                                <div class="card-body p-5">
+                                    <p class="font-weight-light m-0">
+                                        {% blocktrans %}
+                                            It depends on your country. Please google how to buy crypto
+                                            yourself
+                                        {% endblocktrans %}
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!-- End -->
+
+
+                        <!-- Accordion item 6 -->
+                        <div class="card">
+                            <div id="headingSix" class="card-header bg-white shadow-sm border-0">
+                                <h2 class="mb-0">
+                                    <button type="button" data-toggle="collapse" data-target="#collapseSix"
+                                            aria-expanded="false" aria-controls="collapseSix"
+                                            class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">
+                                        {% blocktrans %}What is your accuracy ?{% endblocktrans %}
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseSix" aria-labelledby="headingSix" data-parent="#accordionExample"
+                                 class="collapse">
+                                <div class="card-body p-5">
+                                    <p class="font-weight-light m-0">
+                                        {% blocktrans %}
+                                            Our accuracy is in range 95% 100%, because matches are fixed. It means they
+                                            always win.
+                                        {% endblocktrans %}
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!-- End -->
+
+                    </div><!-- End -->
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+
+    <!-- Start Call Action Area -->
+    <section id="begin" class="call-action section">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-10">
+                    <div class="text-center">
+                        <h1 class="text-center h4">Contact</h1>
+                        <div class="mt-3 pt-3">
+                            <p class="h2 text-center pt-2">idg-infos@safe.mail</p>
+                            <a href="https://t.me/TariqFootballMoney" target="_blank" class="h4 text-center mt-5">Football Money (Telegram)</a>
+                            <p class="pt-4">Please use this email address or telegram link if you want to make your
+                                order or ask any questions</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Call Action -->
+
+{% endblock content %}

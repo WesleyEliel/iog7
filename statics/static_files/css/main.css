@@ -1,0 +1,1151 @@
+/*
+* Mate - Bootstrap 4 Template
+* Build Date: December 2017
+* Last updated: December 2017
+* Version: 1.0
+* Author: UIdeck
+* Copyright (C) 2018 UIdeck
+*/
+/* ------------------------------------- */
+/* TABLE OF CONTENTS
+/* -------------------------------------
+  1. IMPORT GOOGLE FONTS
+  2. GENERAL
+    -2.1 SECTION TITLE
+    -2.2 BUTTONS
+    -2.3 SOCIAL ICON
+    -2.4 PRE LOADER
+    -2.5 SCROLL TO UP
+  3. HERO AREA
+  4. NAVBAR
+  5. SERVICES SECTION
+  6. FEATURES SECTION
+  7. VIDEO PROMO SECTION
+  8. PORTFOLIO SECTION
+  9. PRICING TABLE
+  10. COUNTER SECTION
+  11. TESTIMONIAL AREA
+  12. TEAM SECTION
+  13. BLOG SECTION
+  14. CONTACT SECTION
+  15. FOOTER SECTION
+    -15.1 COMING SOON PAGE
+  ------------------------------------- */
+/* ==========================================================================
+   1. IMPORT GOOGLE FONTS
+   ========================================================================== */
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700");
+
+/* ==========================================================================
+   2. GENERAL
+   ========================================================================== */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    background: #fff;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+a:hover, a:focus {
+    color: #d8fdf3;
+}
+
+a {
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+a:not([href]):not([tabindex]) {
+    color: #fff;
+}
+
+a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
+    color: #2D2C2C;
+}
+
+/* ==========================================================================
+   2.1 Section Title
+   ========================================================================== */
+.section {
+    padding: 80px 0;
+}
+
+.section-header {
+    color: #fff;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.section-header .section-title {
+    font-size: 28px;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #333;
+    position: relative;
+}
+
+.section-header .section-title span {
+    color: #2D2C2C;
+}
+
+.section-header .section-subtitle {
+    margin-top: 15px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.section-header .lines {
+    margin: auto;
+    width: 70px;
+    position: relative;
+    border-top: 2px solid #2D2C2C;
+    margin-top: 15px;
+}
+
+/* ==========================================================================
+   2.2 Buttons
+   ========================================================================== */
+.btn {
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 0px;
+    font-weight: 400;
+    color: #fff;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    display: inline-block;
+}
+
+.btn:focus,
+.btn:active {
+    box-shadow: none;
+    outline: none;
+    color: #fff;
+}
+
+.btn-common {
+    border: 1px solid #2D2C2C;
+    background: #2D2C2C;
+    position: relative;
+    color: #fff;
+    z-index: 1;
+    border-radius: 30px;
+}
+
+.btn-common:hover {
+    background: rgb(116, 179, 72);
+    border-color: rgb(116, 179, 72);
+    transition: all .50s ease-in-out;
+    -moz-transition: all .50s ease-in-out;
+    -webkit-transition: all .50s ease-in-out;
+}
+
+.btn-border {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 4px;
+}
+
+.btn-border:hover {
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: #2D2C2C;
+}
+
+.btn-lg {
+    padding: 14px 33px;
+    font-size: 16px;
+}
+
+.btn-rm {
+    padding: 7px 0px;
+    color: #999;
+    text-transform: capitalize;
+}
+
+.btn-rm i {
+    vertical-align: middle;
+}
+
+button:focus {
+    outline: none !important;
+}
+
+.clear {
+    clear: both;
+}
+
+/* ==========================================================================
+	 2.4  Pre Loader
+	 ========================================================================== */
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    z-index: 9999999999;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    top: 45%;
+    position: relative;
+    margin: 0px auto;
+}
+
+.double-bounce1, .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #2D2C2C;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+    0%, 100% {
+        -webkit-transform: scale(0);
+    }
+    50% {
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes sk-bounce {
+    0%, 100% {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+    }
+    50% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+
+/* ==========================================================================
+  -2.5 Scroll To Up
+   ========================================================================== */
+
+.change-language-area {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+}
+
+.change-language-area i {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 36px;
+    color: #2D2C2C;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: rgb(116, 179, 72);
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 18px;
+    right: 15px;
+}
+
+
+.back-to-top i {
+    display: block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    color: #2D2C2C;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: rgb(116, 179, 72);
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+/* ==========================================================================
+   3. Hero Area
+   ========================================================================== */
+#hero-area {
+    background: url(../img/home-bg2.jpg) fixed no-repeat;
+    background-size: cover;
+    color: #fff;
+    height: 610px!important;
+    overflow: hidden;
+    position: relative;
+}
+
+#hero-area .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: #2D2C2C;
+    opacity: 0.5;
+}
+
+#hero-area .contents {
+    padding: 20px 0 130px;
+}
+
+#hero-area .contents h1 {
+    color: #fff !important;;
+    font-size: 42px;
+    font-weight: 700;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+#hero-area .contents p {
+    font-size: 18px;
+    color: #2D2C2C !important;;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+}
+
+#hero-area .contents .btn {
+    margin: 25px 25px 0px 0px;
+}
+
+#hero-area .banner_bottom_btn {
+    margin-top: 40px;
+}
+
+#hero-area .banner_bottom_btn i {
+    color: #fff;
+    font-size: 48px;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+#hero-area .banner_bottom_btn i:hover {
+    color: #2D2C2C;
+}
+
+/* ==========================================================================
+   4. Navbar Style
+   ========================================================================== */
+.navbar-brand {
+    position: relative;
+    padding: 0px;
+}
+
+.navbar-brand .logo {
+    font-size: 2.2rem;
+    font-weight: 500;
+    letter-spacing: 0.07rem;
+}
+
+.navbar-brand .logo .part-1 {
+
+}
+
+.navbar-brand .logo .part-2 {
+    font-size: 1.7rem;
+}
+
+.navbar-brand .logo .part-3 {
+
+}
+
+.top-nav-collapse {
+    z-index: 999999;
+    top: 0px !important;
+    padding: 10px 0px;
+    box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    color: #E2DFDE !important;
+    background: #2D2C2C !important;
+}
+
+.top-nav-collapse .navbar-brand {
+    top: 0px;
+}
+
+.top-nav-collapse .navbar-nav .nav-link {
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.top-nav-collapse .navbar-nav .nav-link:hover {
+    color: #fff !important;
+}
+
+.top-nav-collapse .navbar-nav .nav-link:not(.cta):after {
+    content: '';
+    align-self: center;
+    text-align: center;
+    position: absolute;
+    width: 60%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 23%;
+    background-color: rgb(116, 179, 72);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.top-nav-collapse .navbar-nav .nav-link:not(.cta):hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+.top-nav-collapse .navbar-nav .nav-link:not(.cta).active {
+    color: rgb(116, 179, 72) !important;
+}
+
+.indigo {
+    background: transparent;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: #fff;
+    padding: 0 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 40px;
+    background: transparent;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:not(.cta):after {
+    content: '';
+    align-self: center;
+    text-align: center;
+    position: absolute;
+    width: 60%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 23%;
+    background-color: rgb(116, 179, 72);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+
+.navbar-expand-lg .navbar-nav li a:hover,
+.navbar-expand-lg .navbar-nav li .active > a,
+.navbar-expand-lg .navbar-nav li a:focus {
+    color: #fff;
+}
+
+.navbar .nav-link:not(.cta).active {
+    color: rgb(116, 179, 72) !important;
+}
+
+
+.navbar .cta {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px;
+    border-color: rgb(116, 179, 72) !important;
+    background-color: rgb(116, 179, 72) !important;
+}
+
+.navbar .cta:hover {
+    color: rgb(116, 179, 72) !important;
+    background: transparent !important;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.slicknav_btn {
+    border-color: #fff;
+}
+
+.slicknav_menu .slicknav_icon-bar {
+    background: #fff;
+}
+
+/* only small tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    #nav-main li a.nav-link {
+        padding-top: 18px;
+    }
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.slicknav_menu {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-header {
+        width: 100%;
+    }
+
+    .navbar-brand {
+        position: absolute;
+        padding: 15px;
+        top: 0;
+    }
+
+    .navbar-brand img {
+        width: 70%;
+    }
+
+    #mobile-menu {
+        display: none;
+    }
+
+    .slicknav_menu {
+        display: block;
+    }
+
+    .slicknav_nav .active a {
+        background: #2D2C2C;
+        color: #fff;
+    }
+
+    .slicknav_nav a:hover, .slicknav_nav .active {
+        color: #2D2C2C;
+        background: #f8f9fa;
+    }
+
+    .slicknav_nav .dropdown li a.active {
+        background: #f8f9fa;
+        color: #2D2C2C;
+    }
+}
+
+/* ==========================================================================
+  5. Call To Action
+   ========================================================================== */
+
+.call-action {
+    background-color: #d9d9d5;
+}
+
+.call-action .inner-content {
+    position: relative;
+    padding: 7px 0;
+    border-radius: 10px;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.call-action .inner-content .bg-shape {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.call-action .text h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .call-action .text h2 {
+        font-size: 25px;
+        line-height: 38px;
+    }
+}
+
+@media (max-width: 767px) {
+    .call-action .text h2 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+}
+
+.call-action .action-form-wrapper {
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+    .call-action .action-form-wrapper {
+        margin-bottom: 50px;
+    }
+}
+
+.call-action .action-form-wrapper form {
+    position: relative;
+}
+
+@media (max-width: 767px) {
+    .call-action .action-form-wrapper form {
+        text-align: center;
+    }
+}
+
+.call-action .action-form-wrapper form input {
+    width: 75%;
+    height: 50px;
+    border-radius: 50px 0 0 50px;
+    background: #d9d9d5;
+    color: #2D2C2C;
+    font-size: 16px;
+    border: 3px solid #2D2C2C;
+    padding: 0 30px;
+    transition: all 0.3s ease-out 0s;
+}
+
+.call-action .action-form-wrapper form input:focus {
+    border-color: rgb(116, 179, 72) !important;
+}
+
+.call-action .action-form-wrapper form button {
+    padding: 0 22px;
+    color: #fff;
+    border-radius: 0 50px 50px 0;
+    border: 3px solid #2D2C2C;
+    background: #333;
+    font-size: 18px;
+    font-weight: 500;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 50px;
+}
+
+.call-action .action-form-wrapper form button:hover {
+    color: #2D2C2C;
+    height: 50px;
+    background: rgb(116, 179, 72);
+    border: 3px solid #2D2C2C;
+}
+
+@media (max-width: 767px) {
+    .call-action .action-form-wrapper form button {
+        position: static;
+        margin: auto;
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 767px) {
+    .call-action .action-form-wrapper form button {
+        position: absolute;
+        margin-top: 0;
+    }
+}
+
+
+/* ==========================================================================
+  5. Services section
+   ========================================================================== */
+.item-boxes {
+    text-align: center;
+    padding: 0px 15px;
+    margin-bottom: 15px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.item-boxes .icon {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border: 1px solid #2D2C2C;
+    display: inline-block;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.item-boxes .icon i {
+    font-size: 26px;
+    line-height: 60px;
+    color: #2D2C2C;
+}
+
+.item-boxes h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.item-boxes:hover .icon {
+    border-color: rgb(116, 179, 72);
+}
+
+.item-boxes:hover .icon i {
+    color: rgb(116, 179, 72);
+}
+
+/* ==========================================================================
+	9. Pricing Table
+	========================================================================== */
+.pricing-tables {
+}
+
+.pricing-table {
+    padding: 0px 0px 40px 0px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    border: transparent;
+    text-align: center;
+    background-color: #FFFFFF;
+    border: 1px solid #f1f1f1;
+     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.pricing-table:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
+}
+
+.pricing-table .pricing-details h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    background: #f1f1f1;
+    padding: 30px 0;
+}
+
+.pricing-table .pricing-details span {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 400;
+    color: rgb(116, 179, 72);
+    margin-bottom: 20px;
+}
+
+.pricing-table .pricing-details ul {
+    margin-bottom: 35px;
+}
+
+.pricing-table .pricing-details ul li {
+    padding: 10px;
+    font-size: 15px;
+    border-bottom: 1px dotted #f1f1f1;
+}
+
+.table-left {
+    margin-top: 20px;
+}
+
+/* ==========================================================================
+ 10. Counter Section Style
+ ========================================================================== */
+.counters {
+    background-color:#2D2C2C;
+}
+
+.counters .facts-item {
+    text-align: center;
+    color: #fff;
+}
+
+.counters .facts-item .icon {
+    margin-bottom: 30px;
+}
+
+.counters .facts-item .icon i {
+    font-size: 50px;
+    color: #fff;
+}
+
+.counters .facts-item .fact-count h3 {
+    font-size: 35px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.counters .facts-item .fact-count h4 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+
+
+/* ==========================================================================
+  12. Video Section
+   ========================================================================== */
+
+
+.swiper-container {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.swiper-wrapper {
+    margin: 0 auto !important;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 380px;
+    height: 190px;
+    border-radius: 15px;
+    background-color: white !important;
+    box-sizing: border-box;
+    padding: 20px;
+
+}
+
+.swiper-slide {
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-slide .home-page-video-box {
+    width: 101%;
+    height: 190px;
+    overflow: hidden;
+    margin-left: -1px;
+    border-radius: 15px;
+}
+
+.swiper-slide .home-page-video-box .home-page-video {
+    cursor: pointer;
+    border-radius: 15px !important;
+}
+
+
+/* ==========================================================================
+  14. Contact Us
+  ========================================================================== */
+
+.accordionFAQ .panel-group {
+    margin-top: 100px
+}
+
+.accordionFAQ .panel {
+    background-color: transparent;
+    box-shadow: none;
+    border-bottom: 0px solid transparent;
+    border-radius: 0;
+    margin: 0
+}
+
+.accordionFAQ .panel-default {
+    border: 0
+}
+
+.accordion-wrap .panel-heading {
+    padding: 0px;
+    border-radius: 0px
+}
+
+.accordionFAQ .panel .panel-heading a.collapsed {
+    color: #2D2C2C;
+    display: block;
+    padding: 12px 30px;
+}
+
+.accordionFAQ .panel .panel-heading a {
+    font-size: 18px;
+    display: block;
+    padding: 12px 30px;
+    background: #fff;
+    color: rgb(116, 179, 72);
+    border-bottom: 1px solid #141414;
+    border-top: 1px solid #141414
+}
+
+.accordion-wrap .panel .panel-heading a {
+    font-size: 14px
+}
+
+.accordionFAQ .panel-group .panel-heading + .panel-collapse > .panel-body {
+    border-top: 0;
+    padding-top: 0;
+    padding: 25px 30px 30px 35px;
+}
+
+.img-accordion {
+    width: 81px;
+    float: left;
+    margin-right: 15px;
+    display: block
+}
+
+.accordionFAQ .panel .panel-heading a.collapsed:after {
+    content: "\2b";
+    color: #999999;
+    background: #f1f1f1
+}
+
+.accordionFAQ .panel .panel-heading a:after,
+.accordionFAQ .panel .panel-heading a.collapsed:after {
+    font-family: 'FontAwesome';
+    font-size: 15px;
+    width: 36px;
+    line-height: 48px;
+    text-align: center;
+    background: #F1F1F1;
+    border: #141414 1px solid;
+    float: left;
+    margin-left: -31px;
+    margin-top: -12px;
+    margin-right: 15px
+}
+
+.accordionFAQ .panel .panel-heading a:after {
+    content: "\2212"
+}
+
+.accordionFAQ .panel .panel-heading a:after,
+.accordionFAQ .panel .panel-heading a.collapsed:after {
+    font-family: 'FontAwesome';
+    font-size: 15px;
+    width: 36px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    background: #F1F1F1;
+    border: #141414 1px solid;
+    float: left;
+    margin-left: -31px;
+    margin-top: -12px;
+    margin-right: 15px
+}
+
+
+/* ==========================================================================
+  14. Terms and Conditions
+  ========================================================================== */
+
+.terms {
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.terms .summary {
+    margin-top: 40px;
+    margin-bottom: 35px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.terms .summary .summary-list-wrapper {
+    width: 33%;
+}
+
+.terms .summary .summary-list-wrapper .summary-items .summary-item a {
+    color: #141414;
+    line-height: 2rem;
+    text-decoration: underline;
+}
+.terms .summary .summary-list-wrapper .summary-items .summary-item a:hover {
+    color: rgb(116, 179, 72);
+}
+
+.terms .terms-parts {
+    width: 80%!important;
+    align-self: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.terms .terms-parts .terms-part {
+    margin: 20px 0;
+
+}
+
+.terms .terms-parts .terms-part .terms-part-title{
+    font-size: 20px;
+    color: #141414;
+    margin-left: 2vw;
+    margin-bottom: 20px;
+    text-transform: capitalize!important;
+}
+.terms .terms-parts .terms-part .terms-part-title:hover {
+    color: rgb(116, 179, 72);
+}
+
+.terms .terms-parts .terms-part .terms-part-content{
+
+}
+
+.terms .terms-parts .terms-part .terms-part-content div {
+    margin-left: 3vw;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.terms .terms-parts .terms-part .terms-part-content div ul {
+    list-style: circle!important;
+}
+.terms .terms-parts .terms-part .terms-part-content div ul li {
+    margin: 10px 0;
+}
+
+
+.terms .terms-parts .terms-part .terms-part-content p {
+    font-size: 15px!important;
+}
+
+
+/* ==========================================================================
+15. Trust Style
+ ========================================================================== */
+
+.trust-us-tables-title-wrapper {
+    background-color: rgb(116, 179, 72) !important;
+    color: #212529!important;
+}
+
+.trust-us-tables-title {
+    font-size: 21px!important;
+    vertical-align: center;
+    text-align: center!important;
+    margin-top: 10px!important;
+    margin-bottom: 7px!important;
+}
+
+.trust-us-table-date {
+    font-size: 19px!important;
+    font-weight: bold;
+    margin: 10px auto!important;
+}
+
+.trust-us-table-secret {
+    font-weight: 600;
+}
+
+.trust-us-table-wrapper {
+    padding: 8px!important;
+}
+
+/* ==========================================================================
+15. Footer Style
+ ========================================================================== */
+footer {
+    background: #2D2C2C;
+    padding: 20px 0;
+}
+
+.footer-links {
+    line-height: 48px;
+}
+
+.footer-links li {
+    float: left;
+}
+
+.footer-links li a {
+    color: #fff;
+    margin-right: 15px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+}
+
+.footer-links li a:hover {
+    color: rgb(116, 179, 72);
+}
+
+.copyright {
+    margin-top: 10px;
+    float: right;
+}
+
+.copyright p {
+    color: #fff;
+}
+
+.copyright p a {
+    color: #fff;
+}
+
+.copyright p a:hover {
+    color: #2D2C2C;
+}
