@@ -20,6 +20,6 @@ def populate_matches():
         Match.objects.create(**match)
 
 
-populate_matches()
+populate_encrypted_matches()
 
 """exec(open('populate.py').read())"""
