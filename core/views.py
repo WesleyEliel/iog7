@@ -43,7 +43,7 @@ class AboutView(generic.View):
 class TrustView(generic.View):
     def get(self, request, *args, **kwargs):
         current_encrypted_match = EncryptedProof.objects.filter(is_active=True, display_key=False)[0]
-        previous_encrypted_matches = EncryptedProof.objects.filter(is_active=True, display_key=True).order_by('date')
+        previous_encrypted_matches = EncryptedProof.objects.filter(is_active=True, display_key=True).order_by('-date')
         page_title = _("Trust")
         context = {
             'page_title': page_title,
