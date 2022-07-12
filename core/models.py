@@ -105,7 +105,7 @@ class Match(models.Model):
     date = models.DateField(verbose_name=_("Date du jeu"))
     odd = models.FloatField(verbose_name=_("Odds"), null=False, blank=False)
     odd_type = models.CharField(verbose_name=_("Odds type"), blank=False, max_length=220, choices=ODD_CHOICES)
-    match_id = models.IntegerField(verbose_name=_("Match Id"), default=id_generator(), unique=True)
+    match_id = models.IntegerField(verbose_name=_("Match Id"), default=id_generator())
     price = models.DecimalField(verbose_name=_("Price"), max_digits=7, decimal_places=2)
     is_active = models.BooleanField(verbose_name=_("Design if the Match is available"), default=True)
     created = models.DateTimeField(verbose_name=_("Creation Date"), auto_now_add=True, auto_now=False)

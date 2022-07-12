@@ -1,8 +1,15 @@
 from django.contrib import admin
+import datetime
 
 # Register your models here.
 from core.models import Surfer, PricingPlan, Counter, VideoProof, Match, EncryptedProof
 
+@admin.action(description='Incrémenter d\'une journée')
+def increment(modeladmin, request, queryset):
+    for element in queryset:
+        element.date = element.date + datetime.timedelta(days=1)
+        element.match_id += 1
+        element.save()
 
 @admin.register(Surfer)
 class SurferAdmin(admin.ModelAdmin):
@@ -26,7 +33,7 @@ class CounterAdmin(admin.ModelAdmin):
 
 @admin.register(Match)
 class MatchAdmin(admin.ModelAdmin):
-    pass
+    actions = [increment]
 
 
 @admin.register(EncryptedProof)
