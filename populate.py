@@ -19,6 +19,7 @@ def populate_matches():
         print(match)
         Match.objects.create(**match)
 
+populate_matches()
 
 populate_encrypted_matches()
 

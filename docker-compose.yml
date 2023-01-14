@@ -1,0 +1,164 @@
+version: "3"
+
+volumes:
+  db_data:
+  flower_data: # grafana_data:
+
+  static_volume:
+  medias_volume:
+  db_backup_volume: # elasticsearch_volume:
+
+  logs_volume:
+
+
+services:
+  nginx:
+    build:
+      context: ./.docker/nginx
+      dockerfile: Dockerfile
+      # dockerfile: Dockerfile.certified
+    image: football.money.nginx
+    ports:
+      - 1330:80
+    container_name: football.money.nginx
+    restart: always
+    volumes:
+      - static_volume:/usr/src/app/static/static_files
+      - medias_volume:/usr/src/app/static/medias
+    depends_on:
+      - app
+
+  app:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: football.money.app
+    container_name: football.money.app
+    restart: always
+    command: gunicorn iog.wsgi:application --workers 1 --bind 0.0.0.0:8000 --timeout 700 --log-level debug
+    env_file: .env
+    volumes:
+      - db_backup_volume:/usr/src/app/data/
+      - static_volume:/usr/src/app/static/static_files
+      - medias_volume:/usr/src/app/static/medias
+    expose:
+      - 8000
+    depends_on:
+      - redis
+
+  redis:
+    container_name: football.money.redis
+    image: redis:6-alpine
+
+  # celery:
+  #   image: football.money.app
+  #   container_name: football.money.celery
+  #   restart: always
+  #   entrypoint: [ "./entrypoint.sh" ]
+  #   command: celery worker --app=backend --loglevel=debug
+  #   depends_on:
+  #     - backend
+
+  # celery-beat:
+  #   image: football.money.app
+  #   container_name: football.money.celery-beat
+  #   restart: always
+  #   entrypoint: [ "./entrypoint.sh" ]
+  #   command: celery beat --app=backend --loglevel=debug --pidfile=
+  #   depends_on:
+  #     - backend
+
+  # flower:
+  #   image: mher/flower:0.9.7
+  #   container_name: football.money.flower
+  #   restart: always
+  #   # command: ['flower', '--broker=redis://redis:6379', '--port=5555']
+  #   ports:
+  #     - 5557:5555
+  #   command: celery flower --persisten=True --basic_auth=WesleyEliel:WesleyEliel
+  #   environment:
+  #     - CELERY_BROKER_URL=redis://redis:6379
+  #     - FLOWER_PORT=5555
+  #   volumes:
+  #     - flower_data:/data
+  #   depends_on:
+  #     - redis
+  # prometheus:
+  #   image: football.money.prometheus
+  #   container_name: football.money.prometheus
+  #   restart: always
+  #   build:
+  #     context: ./.docker/prometheus
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - 9090:9090
+
+  # grafana:
+  #   image: football.money.grafana
+  #   build:
+  #     context: ./.docker/grafana
+  #     dockerfile: Dockerfile
+  #   volumes:
+  #     - grafana_data:/var/lib/grafana
+  #     - ./grafana/provisioning:/etc/grafana/provisioning
+  #   container_name: football.money.grafana
+  #   restart: always
+  #   depends_on:
+  #     - prometheus
+  #   ports:
+  #     - 3000:3000
+  #   environment:
+  #     - GF_SECURITY_ADMIN_USER=${GF_SECURITY_ADMIN_USER}
+  #     - GF_SECURITY_ADMIN_PASSWORD=${GF_SECURITY_ADMIN_PASSWORD}
+  #     - GF_USERS_DEFAULT_THEME=${GF_USERS_DEFAULT_THEME}
+  #     - GF_USERS_ALLOW_SIGN_UP=${GF_USERS_ALLOW_SIGN_UP}
+  #     - GF_USERS_ALLOW_ORG_CREATE=${GF_USERS_ALLOW_ORG_CREATE}
+  #     - GF_AUTH_ANONYMOUS_ENABLED=${GF_AUTH_ANONYMOUS_ENABLED}
+
+  # logstash:
+  #   image: football.money.logstash
+  #   build:
+  #     context: ./.docker/logstash
+  #     dockerfile: Dockerfile
+  #   container_name: football.money.logstash
+  #   restart: always
+  #   depends_on:
+  #     - elasticsearch
+  #   volumes:
+  #     - logs_volume:/logs:ro
+
+  # elasticsearch:
+  #   image: docker.elastic.co/elasticsearch/elasticsearch:7.5.2
+  #   container_name: football.money.elasticsearch
+  #   restart: always
+  #   environment:
+  #     - discovery.type=single-node
+  #     - http.host=0.0.0.0
+  #     - xpack.security.enabled=false
+  #     - ES_JAVA_OPTS=-Xms750m -Xmx750m
+  #   volumes:
+  #     - elasticsearch_volume:/usr/share/elasticsearch/data
+
+  # kibana:
+  #   image: football.money.kibana
+  #   build:
+  #     context: ./.docker/kibana
+  #     dockerfile: Dockerfile
+  #   container_name: football.money.kibana
+  #   restart: always
+  #   ports:
+  #     - 5601:5601
+  #   depends_on:
+  #     - elasticsearch
+
+  # filebeat:
+  #   image: filebeat:latest
+  #   build:
+  #     context: .docker/filebeat
+  #     dockerfile: Dockerfile
+  #   container_name: football.money.filebeat
+  #   volumes:
+  #     - logs_volume:/app/logs
+  #   command: filebeat -c /etc/filebeat/filebeat.yml -e -d "*" -strict.perms=false
+  #   depends_on:
+  #     - backend

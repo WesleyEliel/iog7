@@ -23,6 +23,7 @@
   7. VIDEO PROMO SECTION
   8. PORTFOLIO SECTION
   9. PRICING TABLE
+  0. Free Bet Prediction Section Section
   10. COUNTER SECTION
   11. TESTIMONIAL AREA
   12. TEAM SECTION
@@ -58,7 +59,8 @@ p {
     line-height: 26px;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
     color: #d8fdf3;
 }
 
@@ -69,7 +71,11 @@ a {
     transition: all 0.2s linear;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
     font-weight: 700;
@@ -95,7 +101,8 @@ a:not([href]):not([tabindex]) {
     color: #fff;
 }
 
-a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
+a:not([href]):not([tabindex]):focus,
+a:not([href]):not([tabindex]):hover {
     color: #2D2C2C;
 }
 
@@ -237,7 +244,8 @@ button:focus {
     margin: 0px auto;
 }
 
-.double-bounce1, .double-bounce2 {
+.double-bounce1,
+.double-bounce2 {
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -256,19 +264,25 @@ button:focus {
 }
 
 @-webkit-keyframes sk-bounce {
-    0%, 100% {
+
+    0%,
+    100% {
         -webkit-transform: scale(0);
     }
+
     50% {
         -webkit-transform: scale(1);
     }
 }
 
 @keyframes sk-bounce {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: scale(0);
         -webkit-transform: scale(0);
     }
+
     50% {
         transform: scale(1);
         -webkit-transform: scale(1);
@@ -332,7 +346,7 @@ button:focus {
     background: url(../img/home-bg2.jpg) fixed no-repeat;
     background-size: cover;
     color: #fff;
-    height: 610px!important;
+    height: 610px !important;
     overflow: hidden;
     position: relative;
 }
@@ -352,7 +366,8 @@ button:focus {
 }
 
 #hero-area .contents h1 {
-    color: #fff !important;;
+    color: #fff !important;
+    ;
     font-size: 42px;
     font-weight: 700;
     margin-top: 18px;
@@ -361,7 +376,8 @@ button:focus {
 
 #hero-area .contents p {
     font-size: 18px;
-    color: #2D2C2C !important;;
+    color: #2D2C2C !important;
+    ;
     font-weight: 400;
     line-height: 30px;
     letter-spacing: 0.5px;
@@ -402,17 +418,13 @@ button:focus {
     letter-spacing: 0.07rem;
 }
 
-.navbar-brand .logo .part-1 {
-
-}
+.navbar-brand .logo .part-1 {}
 
 .navbar-brand .logo .part-2 {
     font-size: 1.7rem;
 }
 
-.navbar-brand .logo .part-3 {
-
-}
+.navbar-brand .logo .part-3 {}
 
 .top-nav-collapse {
     z-index: 999999;
@@ -503,7 +515,7 @@ button:focus {
 
 
 .navbar-expand-lg .navbar-nav li a:hover,
-.navbar-expand-lg .navbar-nav li .active > a,
+.navbar-expand-lg .navbar-nav li .active>a,
 .navbar-expand-lg .navbar-nav li a:focus {
     color: #fff;
 }
@@ -585,7 +597,8 @@ button:focus {
         color: #fff;
     }
 
-    .slicknav_nav a:hover, .slicknav_nav .active {
+    .slicknav_nav a:hover,
+    .slicknav_nav .active {
         color: #2D2C2C;
         background: #f8f9fa;
     }
@@ -761,8 +774,7 @@ button:focus {
 /* ==========================================================================
 	9. Pricing Table
 	========================================================================== */
-.pricing-tables {
-}
+.pricing-tables {}
 
 .pricing-table {
     padding: 0px 0px 40px 0px;
@@ -772,7 +784,7 @@ button:focus {
     text-align: center;
     background-color: #FFFFFF;
     border: 1px solid #f1f1f1;
-     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
@@ -815,10 +827,52 @@ button:focus {
 }
 
 /* ==========================================================================
+	9. Free Bet Prediction Section Section
+	========================================================================== */
+
+.predictions-tab .nav-tabs {
+    width: 100%;
+    margin-bottom: 60px;
+    border-bottom: 0;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    justify-content: space-between!important;
+}
+
+.predictions-tab .nav-tabs>li {
+    float: none;
+    display: inline;
+    width: 50%!important;
+    min-width: 50%;
+}
+
+.predictions-tab .nav-tabs li {
+    margin-right: 15px;
+}
+
+.predictions-tab .nav-tabs li:last-child {
+    margin-right: 0;
+}
+
+
+.predictions-tab .nav-tabs:after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    z-index: -1;
+}
+
+
+/* ==========================================================================
  10. Counter Section Style
  ========================================================================== */
 .counters {
-    background-color:#2D2C2C;
+    background-color: #2D2C2C;
 }
 
 .counters .facts-item {
@@ -939,7 +993,7 @@ button:focus {
     font-size: 14px
 }
 
-.accordionFAQ .panel-group .panel-heading + .panel-collapse > .panel-body {
+.accordionFAQ .panel-group .panel-heading+.panel-collapse>.panel-body {
     border-top: 0;
     padding-top: 0;
     padding: 25px 30px 30px 35px;
@@ -1023,36 +1077,37 @@ button:focus {
     line-height: 2rem;
     text-decoration: underline;
 }
+
 .terms .summary .summary-list-wrapper .summary-items .summary-item a:hover {
     color: rgb(116, 179, 72);
 }
 
 .terms .terms-parts {
-    width: 80%!important;
+    width: 80% !important;
     align-self: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
 }
+
 .terms .terms-parts .terms-part {
     margin: 20px 0;
 
 }
 
-.terms .terms-parts .terms-part .terms-part-title{
+.terms .terms-parts .terms-part .terms-part-title {
     font-size: 20px;
     color: #141414;
     margin-left: 2vw;
     margin-bottom: 20px;
-    text-transform: capitalize!important;
+    text-transform: capitalize !important;
 }
+
 .terms .terms-parts .terms-part .terms-part-title:hover {
     color: rgb(116, 179, 72);
 }
 
-.terms .terms-parts .terms-part .terms-part-content{
-
-}
+.terms .terms-parts .terms-part .terms-part-content {}
 
 .terms .terms-parts .terms-part .terms-part-content div {
     margin-left: 3vw;
@@ -1062,15 +1117,16 @@ button:focus {
 }
 
 .terms .terms-parts .terms-part .terms-part-content div ul {
-    list-style: circle!important;
+    list-style: circle !important;
 }
+
 .terms .terms-parts .terms-part .terms-part-content div ul li {
     margin: 10px 0;
 }
 
 
 .terms .terms-parts .terms-part .terms-part-content p {
-    font-size: 15px!important;
+    font-size: 15px !important;
 }
 
 
@@ -1080,21 +1136,21 @@ button:focus {
 
 .trust-us-tables-title-wrapper {
     background-color: rgb(116, 179, 72) !important;
-    color: #212529!important;
+    color: #212529 !important;
 }
 
 .trust-us-tables-title {
-    font-size: 21px!important;
+    font-size: 21px !important;
     vertical-align: center;
-    text-align: center!important;
-    margin-top: 10px!important;
-    margin-bottom: 7px!important;
+    text-align: center !important;
+    margin-top: 10px !important;
+    margin-bottom: 7px !important;
 }
 
 .trust-us-table-date {
-    font-size: 19px!important;
+    font-size: 19px !important;
     font-weight: bold;
-    margin: 10px auto!important;
+    margin: 10px auto !important;
 }
 
 .trust-us-table-secret {
@@ -1102,7 +1158,7 @@ button:focus {
 }
 
 .trust-us-table-wrapper {
-    padding: 8px!important;
+    padding: 8px !important;
 }
 
 /* ==========================================================================

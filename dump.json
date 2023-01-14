@@ -1,0 +1,106 @@
+[
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$390000$jI9j5lCmWFmQHNTWQ4DhO2$E0F+H8ja99NS8vxTVKw3p98c0bj+By1e5HY1MGiRjv8=",
+    "last_login": "2023-01-04T00:40:06.648Z",
+    "is_superuser": true,
+    "username": "devbackend7",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@iog.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-01-04T00:39:43.735Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "65mocgu8kzf4w8u4pgkgetp2o7nyzjp8",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-x6Kk5wzW2ruLA8iR4qSKuDuJlALamXlvEwnWpaa105xGFFehxeWXZSgvaofAJ7THJMvUlnnM8kjkabu8T0jv29n-HVTodV8rQK0i-6wsZmCLBl1k7Q35EKONQ1YlMMXgjAu2MBel8w6DJrIDW_H5AumQN_o:1pCrp9:UljiZCrQLTxjVZ1lnEo882aJjis0prW1ERib155pqgA",
+    "expire_date": "2023-01-18T00:40:07.058Z"
+  }
+},
+{
+  "model": "core.surfer",
+  "pk": 1,
+  "fields": {
+    "ip_address": "127.0.0.1",
+    "telegram_link": "",
+    "is_banned": false,
+    "created": "2023-01-04T00:38:03.941Z",
+    "updated": "2023-01-04T00:38:03.941Z"
+  }
+},
+{
+  "model": "core.pricingplan",
+  "pk": 1,
+  "fields": {
+    "name": "Basic",
+    "price": "19.00",
+    "order": 1,
+    "first_feature": "5 x matches 2.5+ chacun",
+    "second_feature": "1 x match 4.8+",
+    "third_feature": null,
+    "fourth_feature": null,
+    "created": "2023-01-04T12:14:06.822Z",
+    "is_active": true,
+    "is_big_plan": false,
+    "updated": "2023-01-04T12:14:06.822Z"
+  }
+},
+{
+  "model": "core.pricingplan",
+  "pk": 2,
+  "fields": {
+    "name": "Moyen",
+    "price": "49.00",
+    "order": 2,
+    "first_feature": "5 x matches 2.5+ chancun",
+    "second_feature": "3 x matches 10.0+ chacun",
+    "third_feature": null,
+    "fourth_feature": null,
+    "created": "2023-01-04T12:15:42.786Z",
+    "is_active": true,
+    "is_big_plan": false,
+    "updated": "2023-01-04T12:46:01.596Z"
+  }
+},
+{
+  "model": "core.pricingplan",
+  "pk": 3,
+  "fields": {
+    "name": "VIP",
+    "price": "79.00",
+    "order": 3,
+    "first_feature": "3 x matches 4.8+ chacun",
+    "second_feature": "5 x matches 10.0+ chacun",
+    "third_feature": null,
+    "fourth_feature": null,
+    "created": "2023-01-04T12:16:52.108Z",
+    "is_active": true,
+    "is_big_plan": false,
+    "updated": "2023-01-04T12:16:52.108Z"
+  }
+},
+{
+  "model": "core.pricingplan",
+  "pk": 4,
+  "fields": {
+    "name": "Suprème",
+    "price": "149.00",
+    "order": 4,
+    "first_feature": "15 x matches 4.8+ chacun",
+    "second_feature": "5 x match 10.0+ chacun",
+    "third_feature": null,
+    "fourth_feature": null,
+    "created": "2023-01-04T12:30:31.397Z",
+    "is_active": true,
+    "is_big_plan": true,
+    "updated": "2023-01-04T12:30:31.397Z"
+  }
+}
+]

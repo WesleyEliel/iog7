@@ -2,7 +2,7 @@ from django.contrib import admin
 import datetime
 
 # Register your models here.
-from core.models import Surfer, PricingPlan, Counter, VideoProof, Match, EncryptedProof
+from core.models import Surfer, PricingPlan, Counter, VideoProof, Match, EncryptedProof, ImageProof, TextProof
 
 @admin.action(description='Incrémenter d\'une journée')
 def increment(modeladmin, request, queryset):
@@ -40,6 +40,14 @@ class MatchAdmin(admin.ModelAdmin):
 class EncryptedProofAdmin(admin.ModelAdmin):
     pass
 
+
+@admin.register(ImageProof)
+class ImageProofAdmin(admin.ModelAdmin):
+    pass
+
+@admin.register(TextProof)
+class TextProofAdmin(admin.ModelAdmin):
+    pass
 
 """list_display = ['user', 'ban', ]
 list_filter = ('ban',)

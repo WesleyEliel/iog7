@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+gunicorn = "*"
+pillow = "*"
+pytz = "*"
+requests = "*"
+whitenoise = "*"
+psycopg2-binary = "*"
+python-dotenv = "*"
+celery = "==4.4.7"
+redis = "==3.5.3"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"

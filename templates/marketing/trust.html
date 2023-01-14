@@ -34,29 +34,20 @@
     <section id="about-us" class="section about-us">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title"> {% blocktrans %} Trust Us {% endblocktrans %} </h2>
+                <h2 class="section-title"> {% blocktrans %}Trust Us{% endblocktrans %} </h2>
                 <hr class="lines">
                 <p class="section-subtitle">
-                    {% blocktrans %} Here you can follow our work in real time and make checks. {% endblocktrans %}
+                    {% blocktrans %}Here you can follow our work in real time and make checks.{% endblocktrans %}
                 </p>
             </div>
             <div class="row my-3 justify-content-center">
                 <div class="col-10 mt-4">
                     <p>
-                        {% blocktrans %}
-                            We will publish here the correct scores for some matches. But they will be encrypted. The
-                            info is published before the match. You save the text, but you can't see the result.
-                            After the match is finished, we will add here the secret key to decrypt and check the
-                            correct score. It is free and non-profitable. Brilliant.
-                        {% endblocktrans %}
-                    {% blocktrans %} We use The  {% endblocktrans %}
-                        <a href="https://thedecryptor.com/" target="_blank"> {% blocktrans %} Decryptor {% endblocktrans %} </a>. <br> The link: <a
+                        {% blocktrans %}We will publish here the correct scores for some matches. But they will be encrypted. The info is published before the match. You save the text, but you can't see the result. After the match is finished, we will add here the secret key to decrypt and check the correct score. It is free and non-profitable. Brilliant.{% endblocktrans %}
+                    {% blocktrans %}We use The{% endblocktrans %}
+                        <a href="https://thedecryptor.com/" target="_blank"> {% blocktrans %}Decryptor{% endblocktrans %} </a>. <br> The link: <a
                             href="https://thedecryptor.com/" target="_blank">thedecryptor.com</a>. <br><br>
-                    {% blocktrans %}
-                        We publish only Wednesdays matches. There are last ~25 matches (all by Wednesdays). So please
-                        don't ask us why we don't publish every match here
-                    {% endblocktrans %}
-
+                    {% blocktrans %}We publish only Wednesdays matches. There are last ~25 matches (all by Wednesdays). So pleasedon't ask us why we don't publish every match here.{% endblocktrans %}
                     </p>
                 </div>
             </div>
@@ -169,10 +160,10 @@
                                         </p>
                                         <p class="font-weight-bold text-danger">{{ encrypted_match.key }}</p>
                                         <p>
-                                            <li>{% blocktrans %} Copy the Secret key {% endblocktrans %}: {{ encrypted_match.key }}</li>
-                                            <li> {% blocktrans %} Go to The {% endblocktrans %} <a target="_blank"
+                                            <li>{% blocktrans %}Copy the Secret key {% endblocktrans %}: {{ encrypted_match.key }}</li>
+                                            <li> {% blocktrans %}Go to The {% endblocktrans %} <a target="_blank"
                                                               href="https://thedecryptor.com/decryptor.php">Decryptor</a>
-                                                {% blocktrans %} and decrypt the correct score {% endblocktrans %}
+                                                {% blocktrans %}and decrypt the correct score.{% endblocktrans %}
                                             </li>
                                         </p>
                                         <hr style="height: 2px; background: black; margin-bottom: 20px; margin-top: 30px;">

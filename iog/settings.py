@@ -11,7 +11,8 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 import os
 from pathlib import Path
-import django_heroku
+
+from dotenv import dotenv_values
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,7 +26,7 @@ SECRET_KEY = 'django-insecure-)3ml2h_uz-lq68ig974_4r^sbaoxjd9rro#g-lc5svav9qvh_#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://iog7.herokuapp.com/']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -86,10 +87,10 @@ WSGI_APPLICATION = 'iog.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd1rhkv3hdt6d9a',
-        'USER': 'nrtmkhuvkpkntt',
-        'PASSWORD': 'edfe9662667785bc934348bd3e92428eb92c8249cdae10b72e7f8afd0647781e',
-        'HOST': 'ec2-23-23-182-238.compute-1.amazonaws.com',
+        'NAME': 'seeguydm',
+        'USER': 'seeguydm',
+        'PASSWORD': 'SJ9KUMFAj7BXn4rPE7JQfDZDTRTGoiNr',
+        'HOST': 'tiny.db.elephantsql.com',
         'PORT': '5432',
     }
 }
@@ -152,4 +153,7 @@ LOCALE_PATHS = (
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-django_heroku.settings(locals())
+
+CORS_ALLOW_ALL_ORIGINS = True
+
+CSRF_TRUSTED_ORIGINS = [ 'http://localhost:1337', 'http://localhost:1330' ]
