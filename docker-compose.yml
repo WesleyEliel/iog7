@@ -45,11 +45,17 @@ services:
       - 8000
     depends_on:
       - redis
+      - db
+  db:
+    image: postgres:latest
+    container_name: db
+    env_file: .db.env
+    volumes:
+      - db_data:/var/lib/postgresql/data
 
   redis:
     container_name: football.money.redis
     image: redis:6-alpine
-
   # celery:
   #   image: football.money.app
   #   container_name: football.money.celery

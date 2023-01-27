@@ -145,7 +145,7 @@ class VideoProof(models.Model):
 
 
 class EncryptedProof(models.Model):
-    date = models.DateField(verbose_name="Date")
+    date = models.DateField(verbose_name="Date", unique=True)
     encrypted_text = models.TextField(verbose_name="Encrypted text")
     key = models.CharField(
         verbose_name="Key", max_length=220, blank=True, null=True)

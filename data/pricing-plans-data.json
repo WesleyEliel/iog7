@@ -1,0 +1,70 @@
+[
+    {
+        "model": "core.pricingplan",
+        "pk": 1,
+        "fields": {
+            "name": "Basic",
+            "price": "19.00",
+            "order": 1,
+            "first_feature": "5 x matches 2.5+ chacun",
+            "second_feature": "1 x match 4.8+",
+            "third_feature": null,
+            "fourth_feature": null,
+            "created": "2023-01-04T12:14:06.822Z",
+            "is_active": true,
+            "is_big_plan": false,
+            "updated": "2023-01-04T12:14:06.822Z"
+        }
+    },
+    {
+        "model": "core.pricingplan",
+        "pk": 2,
+        "fields": {
+            "name": "Moyen",
+            "price": "49.00",
+            "order": 2,
+            "first_feature": "5 x matches 2.5+ chancun",
+            "second_feature": "3 x matches 10.0+ chacun",
+            "third_feature": null,
+            "fourth_feature": null,
+            "created": "2023-01-04T12:15:42.786Z",
+            "is_active": true,
+            "is_big_plan": false,
+            "updated": "2023-01-04T12:46:01.596Z"
+        }
+    },
+    {
+        "model": "core.pricingplan",
+        "pk": 3,
+        "fields": {
+            "name": "VIP",
+            "price": "79.00",
+            "order": 3,
+            "first_feature": "3 x matches 4.8+ chacun",
+            "second_feature": "5 x matches 10.0+ chacun",
+            "third_feature": null,
+            "fourth_feature": null,
+            "created": "2023-01-04T12:16:52.108Z",
+            "is_active": true,
+            "is_big_plan": false,
+            "updated": "2023-01-04T12:16:52.108Z"
+        }
+    },
+    {
+        "model": "core.pricingplan",
+        "pk": 4,
+        "fields": {
+            "name": "Suprème",
+            "price": "149.00",
+            "order": 4,
+            "first_feature": "15 x matches 4.8+ chacun",
+            "second_feature": "5 x match 10.0+ chacun",
+            "third_feature": null,
+            "fourth_feature": null,
+            "created": "2023-01-04T12:30:31.397Z",
+            "is_active": true,
+            "is_big_plan": true,
+            "updated": "2023-01-04T12:30:31.397Z"
+        }
+    }
+]

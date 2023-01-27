@@ -1,0 +1,128 @@
+[
+    {
+        "model": "core.match",
+        "pk": 1,
+        "fields": {
+            "date": "2023-01-05",
+            "odd": 2.6,
+            "odd_type": "full_time",
+            "match_id": 3304,
+            "price": "65.00",
+            "is_active": true,
+            "created": "2023-01-14T01:04:34.823Z",
+            "updated": "2023-01-14T01:04:34.823Z"
+        }
+    },
+    {
+        "model": "core.match",
+        "pk": 2,
+        "fields": {
+            "date": "2023-01-05",
+            "odd": 4.8,
+            "odd_type": "ht_ft",
+            "match_id": 3305,
+            "price": "99.00",
+            "is_active": true,
+            "created": "2023-01-14T01:04:35.235Z",
+            "updated": "2023-01-14T01:04:35.235Z"
+        }
+    },
+    {
+        "model": "core.match",
+        "pk": 3,
+        "fields": {
+            "date": "2023-01-05",
+            "odd": 12.0,
+            "odd_type": "fixed",
+            "match_id": 3306,
+            "price": "190.00",
+            "is_active": true,
+            "created": "2023-01-14T01:04:35.643Z",
+            "updated": "2023-01-14T01:04:35.643Z"
+        }
+    },
+    {
+        "model": "core.match",
+        "pk": 4,
+        "fields": {
+            "date": "2023-01-06",
+            "odd": 2.6,
+            "odd_type": "full_time",
+            "match_id": 3307,
+            "price": "65.00",
+            "is_active": true,
+            "created": "2023-01-14T01:04:36.052Z",
+            "updated": "2023-01-14T01:04:36.052Z"
+        }
+    },
+    {
+        "model": "core.match",
+        "pk": 5,
+        "fields": {
+            "date": "2023-01-06",
+            "odd": 5.0,
+            "odd_type": "ht_ft",
+            "match_id": 3308,
+            "price": "105.00",
+            "is_active": true,
+            "created": "2023-01-14T01:04:36.460Z",
+            "updated": "2023-01-14T01:04:36.460Z"
+        }
+    },
+    {
+        "model": "core.match",
+        "pk": 6,
+        "fields": {
+            "date": "2023-01-06",
+            "odd": 17.0,
+            "odd_type": "fixed",
+            "match_id": 3309,
+            "price": "290.00",
+            "is_active": true,
+            "created": "2023-01-14T01:04:36.870Z",
+            "updated": "2023-01-14T01:04:36.870Z"
+        }
+    },
+    {
+        "model": "core.match",
+        "pk": 7,
+        "fields": {
+            "date": "2023-01-07",
+            "odd": 2.6,
+            "odd_type": "full_time",
+            "match_id": 3310,
+            "price": "65.00",
+            "is_active": true,
+            "created": "2023-01-14T01:04:37.280Z",
+            "updated": "2023-01-14T01:04:37.280Z"
+        }
+    },
+    {
+        "model": "core.match",
+        "pk": 8,
+        "fields": {
+            "date": "2023-01-07",
+            "odd": 6.0,
+            "odd_type": "ht_ft",
+            "match_id": 3311,
+            "price": "120.00",
+            "is_active": true,
+            "created": "2023-01-14T01:04:37.690Z",
+            "updated": "2023-01-14T01:04:37.690Z"
+        }
+    },
+    {
+        "model": "core.match",
+        "pk": 9,
+        "fields": {
+            "date": "2023-01-07",
+            "odd": 22.0,
+            "odd_type": "fixed",
+            "match_id": 3312,
+            "price": "390.00",
+            "is_active": true,
+            "created": "2023-01-14T01:04:38.101Z",
+            "updated": "2023-01-14T01:04:38.101Z"
+        }
+    }
+]

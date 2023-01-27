@@ -95,3 +95,8 @@ Encrypted correct score for November 3rd match:
 
 The Secret key for November 3rd match:
 
+
+
+python manage.py dumpdata --database tiny_db --natural-foreign --natural-primary -e contenttypes -e auth.Permission --indent 2 > dump.json
+
+python manage.py loaddata dump.json

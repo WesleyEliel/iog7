@@ -77,22 +77,29 @@ WSGI_APPLICATION = 'iog.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-"""DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}"""
+docker = {
+    'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    'NAME': 'foootballmoney_db',
+    'USER': 'foootballmoney',
+    'PASSWORD': 'foootballmoney_pw#&@!',
+    'HOST': 'db',
+    'PORT': '5432',
+}
+tiny_db = {
+    'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    'NAME': 'seeguydm',
+    'USER': 'seeguydm',
+    'PASSWORD': 'SJ9KUMFAj7BXn4rPE7JQfDZDTRTGoiNr',
+    'HOST': 'tiny.db.elephantsql.com',
+    'PORT': '5432',
+},
+db_sqlite3 = {
+    'ENGINE': 'django.db.backends.sqlite3',
+    'NAME': BASE_DIR / 'db.sqlite3',
+}
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'seeguydm',
-        'USER': 'seeguydm',
-        'PASSWORD': 'SJ9KUMFAj7BXn4rPE7JQfDZDTRTGoiNr',
-        'HOST': 'tiny.db.elephantsql.com',
-        'PORT': '5432',
-    }
+    'default': docker
 }
 
 # Password validation
@@ -156,4 +163,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOW_ALL_ORIGINS = True
 
-CSRF_TRUSTED_ORIGINS = [ 'http://localhost:1337', 'http://localhost:1330' ]
+CSRF_TRUSTED_ORIGINS = ['http://localhost:1337', 'http://localhost:1330']

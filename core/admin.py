@@ -38,7 +38,8 @@ class MatchAdmin(admin.ModelAdmin):
 
 @admin.register(EncryptedProof)
 class EncryptedProofAdmin(admin.ModelAdmin):
-    pass
+    list_filter = ["display_key", ]
+    ordering = ('-date',)
 
 
 @admin.register(ImageProof)
