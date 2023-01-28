@@ -12,6 +12,17 @@ volumes:
 
 
 services:
+  ngrok:
+    image: shkoliar/ngrok:latest
+    container_name: football.money.ngrok
+    ports:
+      - 4551:4551
+    environment:
+      - AUTH_TOKEN=2KvdUkWGq3iJmLDRxbyNASInLZ9_vs8K3uAfagrdgW6LmaiC
+      - DOMAIN=nginx
+      - PORT=80
+    depends_on:
+      - nginx
   nginx:
     build:
       context: ./.docker/nginx
@@ -48,7 +59,7 @@ services:
       - db
   db:
     image: postgres:latest
-    container_name: db
+    container_name: football.money.db
     env_file: .db.env
     volumes:
       - db_data:/var/lib/postgresql/data

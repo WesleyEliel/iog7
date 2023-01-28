@@ -82,7 +82,7 @@ docker = {
     'NAME': 'foootballmoney_db',
     'USER': 'foootballmoney',
     'PASSWORD': 'foootballmoney_pw#&@!',
-    'HOST': 'db',
+    'HOST': 'football.money.db',
     'PORT': '5432',
 }
 tiny_db = {
