@@ -189,7 +189,7 @@
         },
     });
 
-    $('.home-page-video').on('click', function () {
+    $('.home-page-video-box').on('click', function () {
         location.href = '/videos'
     })
 

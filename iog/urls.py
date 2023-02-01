@@ -28,7 +28,7 @@ urlpatterns = [
 ]
 
 urlpatterns += i18n_patterns(
-    # path('rosetta/', include('rosetta.urls')),
+    path('rosetta/', include('rosetta.urls')),
     path('', views.HomeView.as_view(), name="home"),
     path('', include('core.urls')),
 )

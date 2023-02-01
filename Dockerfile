@@ -18,7 +18,7 @@ ENV PYTHONUNBUFFERED 1
 
 RUN apt update && apt install apt-utils && apt install -y netcat
 
-RUN apt-get update && apt-get install apt-utils && apt-get -y dist-upgrade \
+RUN apt-get update && apt-get install apt-utils && apt-get -y dist-upgrade && apt-get install gettext \
     && apt-get install -y libsqlite3-mod-spatialite binutils libproj-dev gdal-bin python3-gdal \
     && apt-get install -y --no-install-recommends postgresql-client && apt-get install zbar-tools -y \
     && apt-get install libzbar-dev -y \

@@ -1,0 +1,414 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-01 16:29+0000\n"
+"PO-Revision-Date: 2023-02-01 16:30+0000\n"
+"Last-Translator:   <devbackend7@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
+
+#: core/views.py:24 templates/footer.html:10
+msgid "Home"
+msgstr "Accueil"
+
+#: core/views.py:41 templates/base.html:65 templates/base.html:94
+msgid "About"
+msgstr "A propos"
+
+#: core/views.py:54 templates/footer.html:19
+msgid "Trust"
+msgstr "Confiance"
+
+#: core/views.py:65
+msgid "Visuals proofs"
+msgstr "Preuves Visuelles"
+
+#: templates/base.html:68 templates/base.html:97
+msgid "Order"
+msgstr "Commande"
+
+#: templates/base.html:71 templates/base.html:100
+#: templates/home/index.html:214
+msgid "Next Matches"
+msgstr "Prochain Matchs"
+
+#: templates/base.html:77 templates/base.html:106
+msgid "Contact"
+msgstr "Contact"
+
+#: templates/base.html:80 templates/base.html:109
+msgid "Trust Page"
+msgstr "Nous Croire"
+
+#: templates/footer.html:13
+msgid "Videos"
+msgstr "Videos"
+
+#: templates/home/index.html:110
+msgid "About Us"
+msgstr "A propos"
+
+#: templates/home/index.html:113
+msgid "An idea about what we do."
+msgstr "Une idée de ce que nous faisons."
+
+#: templates/home/index.html:119
+msgid ""
+"We provide fixed football matches to let you start profitable betting. We "
+"have a partnership with a big insider, and we redirect you to his services. "
+"The info is correct. We are here to mediate to him."
+msgstr ""
+"Nous fournissons des matchs de football fixes pour vous permettre de "
+"commencer à parier de manière rentable. Nous avons un partenariat avec un "
+"grand initié, et nous vous redirigeons vers ses services. L'information est "
+"correcte. Nous sommes là pour servir de médiateur avec lui."
+
+#: templates/home/index.html:121
+msgid ""
+"We don't give free matches. The main reason: we have enough clients who buy "
+"our matches in subscriptions and get them automatically."
+msgstr ""
+"Nous ne donnons pas de correspondances gratuites. La raison principale est "
+"que nous avons suffisamment de clients qui achètent nos matchs par "
+"abonnement et les obtiennent automatiquement."
+
+#: templates/home/index.html:136
+msgid "Our Services"
+msgstr "Nos Services"
+
+#: templates/home/index.html:139
+msgid "Here is the whole process."
+msgstr "Voici l'ensemble du processus."
+
+#: templates/home/index.html:149
+msgid "Access Matches"
+msgstr "Correspondances d'accès"
+
+#: templates/home/index.html:150
+msgid "We access the list of available matches from our partner."
+msgstr ""
+"Nous accédons à la liste des correspondances disponibles auprès de notre partenaire."
+
+#: templates/home/index.html:158
+msgid "Give you access"
+msgstr "Vous donner accès"
+
+#: templates/home/index.html:159
+msgid "We give you access to information through their bot."
+msgstr "Nous vous donnons accès à des informations par le biais de leur bot."
+
+#: templates/home/index.html:169
+msgid "More About Us"
+msgstr "En savoir plus sur nous"
+
+#: templates/home/index.html:183
+msgid "Order your Pack"
+msgstr "Commander votre Pack"
+
+#: templates/home/index.html:186
+msgid "We can be reached here:"
+msgstr "Vous pouvez nous joindre ici :"
+
+#: templates/home/index.html:193
+msgid ""
+" Please use this email address or telegram link if you want to make your "
+"order or ask any questions"
+msgstr ""
+"Veuillez utiliser cette adresse e-mail ou ce lien télégraphique si vous "
+"souhaitez passer votre commande ou poser des questions."
+
+#: templates/home/index.html:217
+msgid " Here is a list of next match we are going to make money with."
+msgstr ""
+"Voici une liste du prochain match avec lequel nous allons gagner de "
+"l'argent."
+
+#: templates/home/index.html:218
+msgid ""
+" Please choose the match, pay for it, using our payment gate, to get the "
+"match immediately."
+msgstr ""
+"Veuillez choisir le match, le payer, en utilisant notre portail de paiement,"
+" pour obtenir le match immédiatement."
+
+#: templates/home/index.html:228
+msgid "Match ID"
+msgstr "Id du Match"
+
+#: templates/home/index.html:229
+msgid "Date"
+msgstr "Date"
+
+#: templates/home/index.html:230
+msgid "Odd"
+msgstr "Côte"
+
+#: templates/home/index.html:231
+msgid "Odd Type"
+msgstr "Type"
+
+#: templates/home/index.html:232
+msgid "Price"
+msgstr "Prix"
+
+#: templates/home/index.html:247 templates/home/index.html:296
+#: templates/home/index.html:326
+msgid "Buy Now"
+msgstr "Payer Maintenant"
+
+#: templates/home/index.html:265
+msgid "Subscriptions"
+msgstr "Abonnements"
+
+#: templates/home/index.html:268
+msgid "You can take a pack of match to maximize profit!"
+msgstr "Vous pouvez prendre un paquet d'allumettes pour maximiser le profit !"
+
+#: templates/home/index.html:269
+msgid "Here is the available plans."
+msgstr "Voici les options possibles."
+
+#: templates/home/index.html:337
+msgid "Free Bet Predictions"
+msgstr "Paris Gratuits"
+
+#: templates/home/index.html:340
+msgid ""
+"We provide free bet tips for you, so that you start your progression with "
+"us."
+msgstr ""
+"Nous vous fournissons des conseils de pari gratuits, afin que vous "
+"commenciez votre progression avec nous."
+
+#: templates/home/index.html:351
+msgid "Past Predictions"
+msgstr "Prédictions passées"
+
+#: templates/home/index.html:354
+msgid "Future Predictions"
+msgstr "Prévisions futurs"
+
+#: templates/home/index.html:481
+msgid "Winning Matches"
+msgstr "Paris Gagnés"
+
+#: templates/home/index.html:492
+msgid "No. of Clients"
+msgstr "Nombre de clients"
+
+#: templates/home/index.html:503
+msgid "Peoples Love"
+msgstr "L'amour des peuples"
+
+#: templates/home/index.html:545
+msgid "FAQ Section"
+msgstr "Section FAQ"
+
+#: templates/home/index.html:548
+msgid ""
+"Questions people often ask. Anyway, if the questions is still remain - just "
+"contact us."
+msgstr ""
+"Vous pouvez nous joindre ici : Questions que les gens posent souvent. Quoi "
+"qu'il en soit, si les questions restent en suspens, il suffit de nous "
+"contacter."
+
+#: templates/home/index.html:563
+msgid "What payment ways do you accept ?"
+msgstr "Quels moyens de paiement acceptez-vous ?"
+
+#: templates/home/index.html:572
+msgid ""
+"We accept crypto payments only! We don't accept Paypal, Skrill or Western "
+"Union. You can pay via:"
+msgstr ""
+"Quels moyens de paiement acceptez-vous ? Nous n'acceptons que les paiements "
+"cryptographiques ! Nous n'acceptons pas Paypal, Skrill ou Western Union. "
+"Vous pouvez payer via :"
+
+#: templates/home/index.html:577
+msgid "Other types of payment in agreement with our support."
+msgstr "Autres types de paiement en accord avec notre support."
+
+#: templates/home/index.html:592
+msgid "What do 2.5+ 5.0+ 10.0+ odds mean ?"
+msgstr "Que signifient les cotes 2.5+ 5.0+ 10.0+ ?"
+
+#: templates/home/index.html:600
+msgid ""
+"2.5+ means the odd is higher than 2.5, for example 2.8. If you see the odd "
+"10.0+ that means you will get the odd more than 10.0 for example 11.0 or "
+"14.0 etc."
+msgstr ""
+"2.5+ signifie que l'impair est supérieur à 2.5, par exemple 2.8. Si vous "
+"voyez l'impair 10.0+, cela signifie que vous obtiendrez l'impair supérieur à"
+" 10.0, par exemple 11.0 ou 14.0, etc."
+
+#: templates/home/index.html:613
+msgid "What does \"odd type\" mean?"
+msgstr "Que signifie \"type de pari\" ?"
+
+#: templates/home/index.html:621
+msgid "You can bet on different match options, which do have different odds:"
+msgstr ""
+"Vous pouvez parier sur différentes options de match, qui ont des cotes "
+"différentes :"
+
+#: templates/home/index.html:625
+msgid ""
+"Odd type \"full time\" means you will get the result of the match (1 or 2 "
+"teamwins or draw) with no correct score"
+msgstr ""
+"Le type de paris \"full time\" signifie que vous obtiendrez le résultat du "
+"match (1 ou 2 victoires d'équipe ou match nul) sans score exact."
+
+#: templates/home/index.html:628
+msgid ""
+"Odd type \"correct score\" mean you will get the correct score of the match "
+"(1team wins 2:1)"
+msgstr ""
+"Le type de paris \"correct score\" signifie que vous obtiendrez le score "
+"correct du match (1 équipe gagne 2:1)."
+
+#: templates/home/index.html:631
+msgid ""
+"Odd type \"ft/ht\" means you will get the results of the first and the "
+"second halftimes."
+msgstr ""
+"\"Le type de paris ft/ht\" signifie que vous obtiendrez les résultats de la "
+"première et de la deuxième mi-temps."
+
+#: templates/home/index.html:645
+msgid "Where can I bet?"
+msgstr "Où puis-je parier ?"
+
+#: templates/home/index.html:653
+msgid ""
+"Almost all online sportbooks provide our matches. Also you can bet in "
+"offline bookies."
+msgstr ""
+"Presque tous les site de paris sportifs en ligne proposent nos matchs. Vous "
+"pouvez également parier dans les bookmakers hors ligne"
+
+#: templates/home/index.html:669
+msgid "Where can I get Bitcoin?"
+msgstr "Où puis-je me procurer des bitcoins ?"
+
+#: templates/home/index.html:677
+msgid "It depends on your country. Please google how to buy cryptoyourself"
+msgstr ""
+"Cela dépend de votre pays. Veuillez chercher sur Google comment acheter des "
+"cryptomonnaies vous-même."
+
+#: templates/home/index.html:691
+msgid "What is your accuracy ?"
+msgstr "Quelle est votre précision ?"
+
+#: templates/home/index.html:699
+msgid ""
+"Our accuracy is in range 95 à 100 sur 100, because matches are fixed. It "
+"means they always win."
+msgstr ""
+"Notre précision est de l'ordre de 95 à 100 sur 100, parce que les matchs "
+"sont truqués. Cela signifie qu'ils gagnent toujours."
+
+#: templates/home/index.html:725
+msgid ""
+"Please use this email address or telegram link if you want to make your "
+"order or ask any questions"
+msgstr ""
+"Veuillez utiliser cette adresse e-mail ou ce lien Telegram si vous souhaitez"
+" passer votre commande ou poser des questions."
+
+#: templates/marketing/trust.html:37
+msgid "Trust Us"
+msgstr "Faites-nous confiance"
+
+#: templates/marketing/trust.html:40
+msgid "Here you can follow our work in real time and make checks."
+msgstr ""
+"Ici, vous pouvez suivre notre travail en temps réel et effectuer des "
+"contrôles."
+
+#: templates/marketing/trust.html:46
+msgid ""
+"We will publish here the correct scores for some matches. But they will be "
+"encrypted. The info is published before the match. You save the text, but "
+"you can't see the result. After the match is finished, we will add here the "
+"secret key to decrypt and check the correct score. It is free and non-"
+"profitable. Brilliant."
+msgstr ""
+"Nous publierons ici les scores corrects de certains matchs. Mais ils seront "
+"cryptés. L'information est publiée avant le match. Vous enregistrez le "
+"texte, mais vous ne pouvez pas voir le résultat. Une fois le match terminé, "
+"nous ajouterons ici la clé secrète pour décrypter et vérifier le score "
+"correct. C'est gratuit et sans but lucratif. Brillant."
+
+#: templates/marketing/trust.html:47
+msgid "We use The"
+msgstr "Nous utilisons le"
+
+#: templates/marketing/trust.html:48
+msgid "Decryptor"
+msgstr "Decryptor"
+
+#: templates/marketing/trust.html:50
+msgid ""
+"We publish only Wednesdays matches. There are last ~25 matches (all by "
+"Wednesdays). So pleasedon't ask us why we don't publish every match here."
+msgstr ""
+"Nous ne publions que les matchs du mercredi. Il y a ~25 derniers matchs "
+"(tous du mercredi). Ne nous demandez donc pas pourquoi nous ne publions pas "
+"tous les matchs ici."
+
+#: templates/marketing/trust.html:60
+msgid "Current Matches"
+msgstr "Matchs actuels"
+
+#: templates/marketing/trust.html:77
+msgid " This is the correct score for "
+msgstr "C'est le score correct pour"
+
+#: templates/marketing/trust.html:90
+msgid "It is encrypted. Please save this text: "
+msgstr "Il est crypté. Veuillez sauvegarder ce texte :"
+
+#: templates/marketing/trust.html:96 templates/marketing/trust.html:144
+msgid " The Secret key for "
+msgstr "La clé secrète pour"
+
+#: templates/marketing/trust.html:98
+msgid "We will add the secret key here after the match."
+msgstr "La clé secrète pourNous ajouterons la clé secrète ici après le match."
+
+#: templates/marketing/trust.html:105
+msgid " Previous Matches "
+msgstr "Matches précédents "
+
+#: templates/marketing/trust.html:124
+msgid " Encrypted correct score for "
+msgstr "Score correct crypté pour "
+
+#: templates/marketing/trust.html:163
+msgid "Copy the Secret key "
+msgstr "Copiez la clé secrète"
+
+#: templates/marketing/trust.html:164
+msgid "Go to The "
+msgstr "Aller sur le "
+
+#: templates/marketing/trust.html:166
+msgid "and decrypt the correct score."
+msgstr "Allez à Theand décryptez le score correct."

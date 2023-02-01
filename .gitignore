@@ -1,2 +1,5 @@
 .idea
 .vscode
+
+static/medias/*
+static/static_files/*

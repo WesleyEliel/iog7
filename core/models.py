@@ -1,10 +1,16 @@
 import json
+import os
 import random
 import string
+import subprocess
+import sys
+
+from pathlib import Path
 
 from django.core.handlers import exception
 from django.db import models
 from django.utils.text import slugify
+from django.utils.crypto import get_random_string
 
 
 def id_generator(size=8, chars=string.digits):
@@ -123,12 +129,12 @@ class ImageProof(models.Model):
 
 
 class VideoProof(models.Model):
-    resume = models.CharField(verbose_name="Resumé",
-                              max_length=220, blank=False)
+    resume = models.TextField(verbose_name="Resumé",
+                              max_length=1000, blank=True)
     thumbnail = models.ImageField(
-        verbose_name="Thumbnail", blank=False, null=False)
+        verbose_name="Thumbnail", upload_to='videosprofs/thumbnails', blank=True, null=True)
     video = models.FileField(
-        verbose_name="Fichier Vidéo", blank=False, null=False)
+        verbose_name="Fichier Vidéo", upload_to='videosprofs/files', blank=False, null=False)
     is_active = models.BooleanField(
         verbose_name="Designe si la preuve est valable", default=True)
     created = models.DateTimeField(
@@ -137,7 +143,16 @@ class VideoProof(models.Model):
         verbose_name="Date de la dernière modification", auto_now_add=False, auto_now=True)
 
     def __str__(self):
-        return f'{self.resume}'
+        return f'{self.id} | {self.resume}'
+
+    def generate_thumbnail(self):
+        in_filepath = self.video.path
+        out_filename = f'{get_random_string(21, string.ascii_lowercase)}.jpg'
+        BASE_DIR = Path(in_filepath).parent.parent.parent
+        img_output_path = os.path.join(BASE_DIR, 'tempdir', out_filename)
+        subprocess.call(['ffmpeg', '-i', in_filepath, '-ss',
+                        '0:00:59.000', '-vframes', '1', img_output_path])
+        return img_output_path
 
     class Meta:
         verbose_name = "Preuve Video"
@@ -208,7 +223,8 @@ class PredictionHistory(models.Model):
     COMPETITIONS_CHOICES = tuple((slugify(element), element) for element in json.load(
         open('competitions-data.json', encoding='utf-8'), ))
     datetime = models.DateTimeField(verbose_name="Date et heure du jeu")
-    competition = models.CharField(verbose_name="Competition", max_length=255)
+    competition = models.CharField(
+        verbose_name="Competition", choices=COMPETITIONS_CHOICES, max_length=255)
     first_team = models.CharField(
         verbose_name="Première Equipe", max_length=25)
     second_team = models.CharField(
@@ -228,7 +244,7 @@ class PredictionHistory(models.Model):
         verbose_name="Date de la dernière modification", auto_now_add=False, auto_now=True)
 
     def __str__(self):
-        return f'Predcition du {self.datetime} sur  {self.match_id}'
+        return f'Predcition du {self.datetime} sur  {self.first_team} Vs {self.second_team}'
 
     class Meta:
         verbose_name = "Historique de Prediction"
